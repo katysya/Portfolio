@@ -15,7 +15,8 @@ export default defineConfig({
       scss: {
         implementation: sass,
         api: 'modern-compiler',
-        additionalData: `@use "@app/styles/_variables.scss" as *;`,
+        additionalData: `@use "@app/styles/_variables.scss" as *; 
+                         @use "@app/styles/reset.scss" as *;`,
       },
     },
   },
