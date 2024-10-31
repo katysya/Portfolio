@@ -1,12 +1,11 @@
 import { useTheme } from '../../../src/context/ThemeContext';
 
+import './style.scss';
+
 const Button = () => {
-  const { isDark, toggleTheme } = useTheme();
+  const { isDark } = useTheme();
   return (
-    <button
-      className={`${isDark ? 'dark' : 'light'}`}
-      onClick={toggleTheme}
-    >
+    <button className={`button ${isDark ? 'dark' : 'light'}`}>
       button
     </button>
   );

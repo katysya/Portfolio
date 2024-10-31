@@ -1,1 +1,10 @@
-$green: #33ff00;
+$white: #fffafa;
+$black: #020202;
+
+$gray: #0000001a;
+
+/*Shadow*/
+$shadow: 0 0 50px 20px $gray;
+
+$size: calc(100vw - 375px) / 1545;
+$test: 20px;
