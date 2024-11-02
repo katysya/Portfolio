@@ -1,6 +1,6 @@
-import { useTheme } from '../../../src/context/ThemeContext';
+import { useTheme } from '../../../../app/Context/ThemeContext';
 
-import './style.scss';
+import './Switcher.scss';
 
 const Switcher = () => {
   const { isDark, toggleTheme } = useTheme();
