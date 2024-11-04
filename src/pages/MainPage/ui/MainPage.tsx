@@ -1,15 +1,24 @@
-import { Switcher } from '../../../shared/ui';
-import { useTheme } from '../../../../app/Context/ThemeContext';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { ThemeProvider } from '../../../../app/Context/ThemeContext';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Home } from '../../Home/index';
+import { Projects } from '../../Projects/index';
 
-import '../../../../app/styles/global.scss';
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <ThemeProvider>
+      <BrowserRouter>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
+        </nav>
 
-function MainPage() {
-  const { isDark } = useTheme();
-  return (
-    <div className={`main-page ${isDark ? 'dark' : 'light'}`}>
-      <Switcher></Switcher>
-    </div>
-  );
-}
-
-export default MainPage;
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  </StrictMode>
+);
