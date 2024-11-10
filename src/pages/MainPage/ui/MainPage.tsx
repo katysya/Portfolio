@@ -4,11 +4,13 @@ import { ThemeProvider } from '../../../../app/Context/ThemeContext';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Home } from '../../Home/index';
 import { Projects } from '../../Projects/index';
+import { Header } from '../../../widgets/Header/index';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
       <BrowserRouter>
+        <Header></Header>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>

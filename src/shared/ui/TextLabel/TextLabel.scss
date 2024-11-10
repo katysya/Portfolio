@@ -1,0 +1,34 @@
+.text-label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: calc(14px + 8 * $size);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  &.dark,
+  &.light {
+    background: transparent;
+  }
+
+  &__primary {
+    opacity: 0.5;
+  }
+
+  &__secondary {
+    padding-left: 31px;
+  }
+
+  &.active {
+    .text-label__primary {
+      padding-left: 31px;
+      opacity: 1;
+    }
+
+    .text-label__secondary {
+      opacity: 0.5;
+      padding: 0;
+    }
+  }
+}
