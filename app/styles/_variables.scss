@@ -1,9 +1,26 @@
+/*Colors*/
 $white: #fffafa;
+
+$black-100: #1c1c1c;
 $black: #020202;
 
 $gray: #0000001a;
 
+/*Gradient*/
+$primaryGradient: linear-gradient(
+  270deg,
+  #f0e5f7,
+  #2a282f,
+  #c093dc,
+  #5c4b66
+);
+
 /*Shadow*/
 $shadow: 0 0 50px 20px $gray;
 
+/*Radius*/
+$radius-s: 30px;
+$radius-m: 40px;
+
+/*Size*/
 $size: calc(100vw - 375px) / 1545;

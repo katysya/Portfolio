@@ -1,4 +1,5 @@
-import { TextLabel } from '../../shared/ui/index';
+import { TextLabel } from '../../../shared/ui/index';
+import { Navigation } from '../../Navigation/index';
 
 import './Header.scss';
 
@@ -12,6 +13,7 @@ const Header = () => {
             secondaryText="Екатерина"
             active={false}
           ></TextLabel>
+          <Navigation></Navigation>
           <TextLabel
             primaryText="Frontend"
             secondaryText="Developer"

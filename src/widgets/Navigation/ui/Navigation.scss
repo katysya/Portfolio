@@ -1,0 +1,46 @@
+.navigation {
+  position: relative;
+  padding: 10px;
+  height: fit-content;
+  border-radius: $radius-m;
+  background: $black-100;
+  color: $white;
+  overflow: visible;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -3px;
+    border-radius: $radius-s;
+    padding: 2px;
+    background: $primaryGradient;
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: gradientBorder 6s ease infinite;
+  }
+
+  &__list {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 6px 32px;
+    background: $black-100;
+  }
+}
+
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
