@@ -8,21 +8,25 @@ const Footer = () => {
 
   const settingsIcon = [
     {
+      id: 1,
       name: 'Telegram',
       size: 22,
       url: '#telegram',
     },
     {
+      id: 2,
       name: 'GitHub',
       size: 22,
       url: '#gitHub',
     },
     {
+      id: 3,
       name: 'Email',
       size: 22,
       url: '#email',
     },
     {
+      id: 4,
       name: 'LinkedIn',
       size: 22,
       url: '#linkedIn',
@@ -38,7 +42,11 @@ const Footer = () => {
           </div>
           <div className="footer__social">
             {settingsIcon.map((item) => (
-              <a href={item.url} className="footer__link">
+              <a
+                href={item.url}
+                className="footer__link"
+                key={item.id}
+              >
                 <Icon
                   name={item.name}
                   size={item.size}
