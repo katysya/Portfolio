@@ -1,8 +1,10 @@
 import * as Icons from '../assets';
 
+import './Icon.scss';
+
 interface IIconProps {
   name: string;
-  size?: number;
+  size?: number | 24;
   color?: string;
 }
 
@@ -17,7 +19,7 @@ const Icon = ({ name, size, color }: IIconProps) => {
     <IconComponent
       width={size}
       height={size}
-      style={{ fill: color }}
+      style={{ color: color }}
     />
   );
 };

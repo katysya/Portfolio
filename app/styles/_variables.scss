@@ -2,9 +2,11 @@
 $white: #fffafa;
 
 $black-100: #1c1c1c;
+$black-200: #292929;
+$black-300: #0000001a;
 $black: #020202;
 
-$gray: #0000001a;
+$gray: #e0e0e0;
 
 /*Gradient*/
 $primaryGradient: linear-gradient(
@@ -16,9 +18,10 @@ $primaryGradient: linear-gradient(
 );
 
 /*Shadow*/
-$shadow: 0 0 50px 20px $gray;
+$shadow: 0 0 50px 20px $black;
 
 /*Radius*/
+$radius-xs: 24px;
 $radius-s: 30px;
 $radius-m: 40px;
 
