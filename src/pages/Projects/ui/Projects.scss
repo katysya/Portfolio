@@ -1,5 +1,8 @@
 .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   &.dark {
-    background: rgb(255, 0, 0);
   }
 }

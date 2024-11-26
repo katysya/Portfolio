@@ -30,7 +30,6 @@ const AnimatePage = ({
     variants={animateProperty[variants]}
     transition={transition}
     style={{
-      height: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

@@ -1,21 +1,15 @@
 import { useTheme } from '../../../../app/Context/ThemeContext';
 
+import { ProjectCard } from '../../../entities/ProjectCard';
+
 import './Projects.scss';
 
 function Projects() {
   const { isDark } = useTheme();
   return (
     <div className={`projects ${isDark ? 'dark' : 'light'}`}>
-      <div>Projec nfdnjsbfts</div>
-      <div>Projects</div>
-      <div>Projec nfdnjsbfts</div>
-      <div>Projects</div>
-      <div>Projec nfdnjsbfts</div>
-      <div>Projects</div>
-      <div>Projec nfdnjsbfts</div>
-      <div>Projects</div>
-      <div>Projec nfdnjsbfts</div>
-      <div>Projects</div>
+      <ProjectCard />
+      <ProjectCard />
     </div>
   );
 }
