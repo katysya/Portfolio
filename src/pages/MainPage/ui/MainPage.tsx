@@ -13,9 +13,7 @@ createRoot(document.getElementById('root')!).render(
     <ThemeProvider>
       <BrowserRouter>
         <Header />
-        <div className="container">
-          <AnimatedRoutes />
-        </div>
+        <AnimatedRoutes />
         <Footer />
       </BrowserRouter>
     </ThemeProvider>

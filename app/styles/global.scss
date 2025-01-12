@@ -31,3 +31,26 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $black-200;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: $black-200;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #e4d1ef),
+    color-stop(0.72, #8f81bb),
+    color-stop(0.86, #882fd6)
+  );
+}

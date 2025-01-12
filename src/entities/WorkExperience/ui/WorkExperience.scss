@@ -1,0 +1,64 @@
+.work-experience {
+  display: flex;
+  gap: 20px;
+  color: $white;
+  background-image: $cardGradient;
+  background-position: 50% 50%;
+  background-size: 1.1rem 1.1rem;
+  padding: 40px 30px;
+  border-radius: 1.25rem;
+  box-shadow: 0px 1px 6px 0 rgb(255 255 255 / 0.2);
+  transition: all 1s;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 0 20px;
+  }
+
+  &__block {
+    transition: all 1s;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 36px;
+    height: 36px;
+    border: 2px solid $white;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &__img {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__name {
+    margin: 0 0 12px;
+    font-size: calc(18px + 4 * $size);
+    font-weight: 600;
+  }
+
+  &__position {
+    margin: 0 0 30px;
+  }
+
+  &__time {
+    font-size: calc(14px + 4 * $size);
+    letter-spacing: 2px;
+  }
+
+  &__responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: calc(12px + 4 * $size);
+    line-height: 1.2;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+}

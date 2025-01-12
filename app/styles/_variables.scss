@@ -18,6 +18,11 @@ $primaryGradient: linear-gradient(
   #5c4b66
 );
 
+$cardGradient: radial-gradient(
+  rgba(255, 255, 255, 0.1) 1px,
+  transparent 1px
+);
+
 /*Shadow*/
 $shadow: 0 0 50px 20px $black;
 
