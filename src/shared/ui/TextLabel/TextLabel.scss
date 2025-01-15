@@ -1,15 +1,16 @@
 .text-label {
   display: flex;
   flex-direction: column;
+  background: transparent;
   gap: 7px;
   font-size: calc(14px + 8 * $size);
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
+  cursor: default;
 
-  &.dark,
-  &.light {
-    background: transparent;
+  &__text {
+    transition: opacity 0.3s;
   }
 
   &__primary {
@@ -18,6 +19,16 @@
 
   &__secondary {
     padding-left: 31px;
+  }
+
+  &:hover {
+    .text-label__primary {
+      opacity: 1;
+    }
+
+    .text-label__secondary {
+      opacity: 0.5;
+    }
   }
 
   &.active {
@@ -29,6 +40,16 @@
     .text-label__secondary {
       opacity: 0.5;
       padding: 0;
+    }
+
+    &:hover {
+      .text-label__primary {
+        opacity: 0.5;
+      }
+
+      .text-label__secondary {
+        opacity: 1;
+      }
     }
   }
 }

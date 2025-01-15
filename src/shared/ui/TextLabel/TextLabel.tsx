@@ -21,8 +21,12 @@ const Textlabel = ({
         active ? 'active' : ''
       }`}
     >
-      <p className="text-label__primary">{primaryText}</p>
-      <p className="text-label__secondary">{secondaryText}</p>
+      <p className="text-label__primary text-label__text">
+        {primaryText}
+      </p>
+      <p className="text-label__secondary text-label__text">
+        {secondaryText}
+      </p>
     </div>
   );
 };
