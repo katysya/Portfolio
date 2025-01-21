@@ -1,21 +1,23 @@
+import { Hashtag } from '../../../shared/ui';
+
 import Experience from '../assets/experience.webp';
 
 import './WorkExperience.scss';
 
 interface IExperience {
-  id: number;
   time: string;
   nameCompany: string;
   position: string;
   responsibilities: string[];
+  hashtags: string[];
 }
 
 const WorkExperience = ({
-  id,
   time,
   nameCompany,
   position,
   responsibilities,
+  hashtags,
 }: IExperience) => {
   return (
     <div className="work-experience">
@@ -33,6 +35,13 @@ const WorkExperience = ({
         <ul className="work-experience__responsibilities">
           {responsibilities.map((item, index) => (
             <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <ul className="work-experience__hashtags">
+          {hashtags.map((item, index) => (
+            <li key={index}>
+              <Hashtag text={item} />
+            </li>
           ))}
         </ul>
       </div>
