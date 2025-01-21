@@ -1,5 +1,6 @@
 .work-experience {
   display: flex;
+  width: 100%;
   gap: 20px;
   color: $white;
   background-image: $cardGradient;
@@ -8,7 +9,6 @@
   padding: 40px 30px;
   border-radius: 1.25rem;
   box-shadow: 0px 1px 6px 0 rgb(255 255 255 / 0.2);
-  transition: all 1s;
 
   &__top {
     display: flex;
@@ -18,18 +18,7 @@
   }
 
   &__block {
-    transition: all 1s;
-  }
-
-  &__number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 36px;
-    height: 36px;
-    border: 2px solid $white;
-    border-radius: 50%;
-    transition: all 0.3s;
+    width: 100%;
   }
 
   &__img {
@@ -41,6 +30,7 @@
     margin: 0 0 12px;
     font-size: calc(18px + 4 * $size);
     font-weight: 600;
+    color: $purple;
   }
 
   &__position {

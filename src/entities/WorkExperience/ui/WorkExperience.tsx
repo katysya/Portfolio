@@ -19,7 +19,6 @@ const WorkExperience = ({
 }: IExperience) => {
   return (
     <div className="work-experience">
-      <div className="work-experience__number">{id}</div>
       <div className="work-experience__block">
         <div className="work-experience__top">
           <img
