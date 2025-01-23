@@ -1,0 +1,22 @@
+.education {
+  padding-bottom: 30px;
+  border-bottom: 1px solid $black-200;
+
+  &__name {
+    margin-bottom: 10px;
+    font-size: calc(16px + 8 * $size);
+    color: $purple;
+  }
+
+  &__position {
+    margin-bottom: 20px;
+    font-size: calc(14px + 8 * $size);
+    color: $white;
+  }
+
+  &__time {
+    font-size: calc(12px + 8 * $size);
+    color: $white;
+    opacity: 0.7;
+  }
+}

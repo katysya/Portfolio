@@ -5,7 +5,7 @@ interface IHashtag {
 }
 
 const Hashtag = ({ text }: IHashtag) => {
-  return <div className="hashtag">{text}</div>;
+  return <div className="hashtag">#{text}</div>;
 };
 
 export default Hashtag;
