@@ -4,6 +4,10 @@ import Particles from 'react-particles';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
+
 import '../../../../app/styles/global.scss';
 import './Home.scss';
 
@@ -21,13 +25,41 @@ function Projects() {
     []
   );
 
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const lines = textRef.current.querySelectorAll('.line');
+
+    const tl = gsap.timeline();
+    tl.fromTo(
+      lines,
+      { opacity: 0, y: 50 }, // Начальное состояние
+      {
+        opacity: 1,
+        y: 0, // Конечное состояние
+        duration: 1,
+        stagger: 0.5, // Задержка между строками
+        ease: 'power2.out',
+      }
+    );
+  }, []);
+
   return (
     <div className={`home ${isDark ? 'dark' : 'light'}`}>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
-      <div>Home</div>
+      <div ref={textRef} className="home__text">
+        <p className="line">
+          This is the <span className="home__highlighted">first</span>{' '}
+          line
+        </p>
+        <p className="line">
+          Here comes the{' '}
+          <span className="home__highlighted">second</span> line
+        </p>
+        <p className="line">
+          And <span className="home__highlighted">finally</span>, the
+          third line
+        </p>
+      </div>
       <Particles
         id="tsparticles"
         init={particlesInit}

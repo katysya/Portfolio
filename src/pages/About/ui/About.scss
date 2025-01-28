@@ -1,11 +1,26 @@
 .about {
   &__title {
+    position: relative;
+    width: fit-content;
     text-align: center;
     color: $white;
     font-weight: 500;
     font-size: calc(22px + 8 * $size);
     margin: 50px 0 60px;
     text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('../assets/images/char.svg') no-repeat;
+      background-size: cover;
+    }
   }
 
   &__subtitle {
@@ -19,6 +34,12 @@
     font-size: calc(20px + 6 * $size);
     color: $white;
     opacity: 0.5;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__block {

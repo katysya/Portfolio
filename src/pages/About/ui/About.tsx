@@ -4,6 +4,10 @@ import { EducationCard } from '../../../entities/Education';
 
 import './About.scss';
 
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
+
 const data = {
   experience: [
     {
@@ -70,10 +74,30 @@ const data = {
 };
 
 const About = () => {
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(TextPlugin);
+
+    const targetText = 'My Experience';
+
+    gsap.to(textRef.current, {
+      duration: 3,
+      text: {
+        value: targetText,
+      },
+      ease: 'none',
+      repeat: -1,
+      repeatDelay: 1,
+    });
+  }, []);
+
   return (
     <div className="about">
-      <div className="about__experience">
-        <h2 className="about__title">MY EXPERIENCES</h2>
+      <div className="about__experience about__section">
+        <h2 className="about__title" ref={textRef}>
+          Loading...
+        </h2>
         <div className="about__block">
           <div className="about__subtitle">Experience</div>
           <div className="about__list">
@@ -90,7 +114,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about__edication">
+      <div className="about__edication about__section">
         <h2 className="about__title">MY Education</h2>
         <div className="about__block">
           <div className="about__subtitle">Education</div>
