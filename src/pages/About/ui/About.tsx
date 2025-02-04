@@ -1,12 +1,15 @@
-import './About.scss';
-import { WorkExperience } from '../../../entities/WorkExperience/index';
-import { EducationCard } from '../../../entities/Education';
-
-import './About.scss';
-
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
+
+import { useTheme } from '../../../../app/Context/ThemeContext';
+
+import { WorkExperience } from '../../../entities/WorkExperience/index';
+import { EducationCard } from '../../../entities/Education';
+
+import { PrimaryButton } from '../../../shared/ui';
+
+import './About.scss';
 
 const data = {
   experience: [
@@ -75,6 +78,7 @@ const data = {
 
 const About = () => {
   const textRef = useRef(null);
+  const { isDark } = useTheme();
 
   useEffect(() => {
     gsap.registerPlugin(TextPlugin);
@@ -93,7 +97,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about">
+    <div className={`about ${isDark ? 'dark' : 'light'}`}>
       <div className="about__experience about__section">
         <h2 className="about__title" ref={textRef}>
           Loading...
@@ -130,6 +134,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <PrimaryButton
+        variant="link"
+        text="Download CV"
+        href="path_to_file"
+        download="proposed_file_name"
+      ></PrimaryButton>
     </div>
   );
 };

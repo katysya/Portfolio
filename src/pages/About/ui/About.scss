@@ -1,13 +1,21 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__title {
     position: relative;
     width: fit-content;
     text-align: center;
-    color: $white;
+    color: $black;
     font-weight: 500;
     font-size: calc(22px + 8 * $size);
     margin: 50px 0 60px;
     text-transform: uppercase;
+
+    .dark & {
+      color: $white;
+    }
 
     &::after {
       content: '';
