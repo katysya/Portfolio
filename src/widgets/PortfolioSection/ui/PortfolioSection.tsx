@@ -1,4 +1,5 @@
 import { PortfolioCard } from '../../../entities/PortfolioCard';
+import { LocationCard } from '../../../entities/LocationCard';
 
 import './PortfolioSection.scss';
 
@@ -22,7 +23,9 @@ const PortfolioSection = () => {
       <div className="portfolio-section__values">
         <PortfolioCard />
       </div>
-      <div className="portfolio-section__location">LOcation</div>
+      <div className="portfolio-section__location">
+        <LocationCard />
+      </div>
       <div className="portfolio-section__everywhere">
         <PortfolioCard />
       </div>

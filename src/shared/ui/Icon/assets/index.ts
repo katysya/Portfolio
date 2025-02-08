@@ -6,5 +6,15 @@ import LinkedIn from '../assets/social/LinkedIn.svg';
 import Home from '../assets/general/Home.svg';
 import Download from '../assets/general/Download.svg';
 import Stack from '../assets/general/Stack.svg';
+import Location from '../assets/general/Location.svg';
 
-export { Telegram, GitHub, Email, LinkedIn, Home, Download, Stack };
+export {
+  Telegram,
+  GitHub,
+  Email,
+  LinkedIn,
+  Home,
+  Download,
+  Stack,
+  Location,
+};

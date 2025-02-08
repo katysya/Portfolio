@@ -1,0 +1,25 @@
+import { Icon } from '../../../shared/ui';
+
+import './LocationCard.scss';
+
+import LocationImg from '../assets/images/avatar.webp';
+
+const LocationCard = () => {
+  return (
+    <div className="location-card">
+      <div className="location-card__avatar">
+        <img
+          className="location-card__img"
+          src={LocationImg}
+          alt="Avatar"
+        />
+      </div>
+      <div className="location-card__place">
+        <Icon name="Location" size={20} color="currentColor" />
+        Rostov-on-Don
+      </div>
+    </div>
+  );
+};
+
+export default LocationCard;

@@ -1,6 +1,6 @@
 import { Hashtag } from '../../../shared/ui';
 
-import Experience from '../assets/experience.webp';
+import Experience from '../assets/images/experience.webp';
 
 import './WorkExperience.scss';
 
