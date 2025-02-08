@@ -2,7 +2,7 @@
   position: relative;
   padding: 5px;
   height: fit-content;
-  border-radius: $radius-m;
+  border-radius: $radius-l;
   background: $black-100;
   color: $white;
   overflow: visible;
@@ -14,7 +14,7 @@
     left: -2px;
     right: -2px;
     bottom: -3px;
-    border-radius: $radius-s;
+    border-radius: $radius-m;
     padding: 2px;
     background: $primaryGradient;
     background-size: 400% 400%;
@@ -34,7 +34,7 @@
   &__icon {
     display: block;
     padding: 6px 16px;
-    border-radius: $radius-xs;
+    border-radius: $radius-s;
     background: $black-200;
   }
 }

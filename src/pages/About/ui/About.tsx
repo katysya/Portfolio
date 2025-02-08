@@ -4,6 +4,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 import { useTheme } from '../../../../app/Context/ThemeContext';
 
+import { PortfolioSection } from '../../../widgets/PortfolioSection';
 import { WorkExperience } from '../../../entities/WorkExperience/index';
 import { EducationCard } from '../../../entities/Education';
 
@@ -46,26 +47,6 @@ const data = {
         'Readmine',
       ],
     },
-    {
-      id: 3,
-      time: 'Ноябрь 2023 - Январь 2025',
-      nameCompany: 'Oggetto',
-      position: 'Frontend Developer',
-      responsibilities: [
-        'Разработка сайтов, лендингов на JavaScript + HTML + SCSS;',
-        'Разработка приложений на Vue.js/Nuxt.js;',
-        'Доработка существующих проектов;',
-        'Вёрстка по макету в Figma.',
-      ],
-      hashtags: [
-        'HTML',
-        'React.js',
-        'Vue.js',
-        'Git',
-        'Css/Scss',
-        'Figma',
-      ],
-    },
   ],
   edication: [
     {
@@ -98,6 +79,7 @@ const About = () => {
 
   return (
     <div className={`about ${isDark ? 'dark' : 'light'}`}>
+      <PortfolioSection />
       <div className="about__experience about__section">
         <h2 className="about__title" ref={textRef}>
           Loading...
