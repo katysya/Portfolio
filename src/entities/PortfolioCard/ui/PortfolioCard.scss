@@ -2,8 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: $radius-xs;
   height: 100%;
+  padding-bottom: 50px;
   opacity: 0.9;
 
   &::after,
@@ -40,7 +42,7 @@
   &__main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     padding: 32px 24px;
   }
 

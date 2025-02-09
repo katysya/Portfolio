@@ -11,9 +11,9 @@ interface IMainMarquee {
 
 const MainMarquee = ({ speed = 30, children }: IMainMarquee) => {
   return (
-    <Marquee className="main-marquee" speed={speed}>
-      {children}
-    </Marquee>
+    <div className="main-marquee">
+      <Marquee speed={speed}>{children}</Marquee>
+    </div>
   );
 };
 

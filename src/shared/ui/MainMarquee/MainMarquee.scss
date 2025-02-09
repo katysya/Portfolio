@@ -1,3 +1,7 @@
 .main-marquee {
-  height: 30px;
+  max-width: 316px;
+
+  .rfm-child {
+    margin: 0 8px;
+  }
 }
