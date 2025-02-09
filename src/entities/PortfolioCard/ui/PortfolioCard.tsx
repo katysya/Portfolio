@@ -1,4 +1,5 @@
 import { Icon } from '../../../shared/ui';
+import { MainMarquee } from '../../../shared/ui';
 
 import './PortfolioCard.scss';
 
@@ -14,6 +15,9 @@ const PortfolioCard = () => {
           If you like using these tools too, we'll get along just
           fine.
         </div>
+        <MainMarquee speed={30}>
+          🔥 Helllo! 🚀 🔥 Helllo! 🚀
+        </MainMarquee>
       </div>
     </div>
   );
