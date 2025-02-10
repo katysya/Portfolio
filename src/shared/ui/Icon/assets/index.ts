@@ -7,12 +7,15 @@ import Home from '../assets/general/Home.svg';
 import Download from '../assets/general/Download.svg';
 import Stack from '../assets/general/Stack.svg';
 import Location from '../assets/general/Location.svg';
+import Victory from '../assets/general/Victory.svg';
 
 import Figma from '../assets/stack/Figma.svg';
 import React from '../assets/stack/React.svg';
 import Js from '../assets/stack/Js.svg';
 import Html from '../assets/stack/Html.svg';
 import Next from '../assets/stack/Next.svg';
+import Redux from '../assets/stack/Redux.svg';
+import Vite from '../assets/stack/Vite.svg';
 import Sass from '../assets/stack/Sass.svg';
 import Git from '../assets/stack/Git.svg';
 import Css from '../assets/stack/Css.svg';
@@ -27,11 +30,14 @@ export {
   Download,
   Stack,
   Location,
+  Victory,
   Figma,
   React,
   Js,
   Html,
   Next,
+  Redux,
+  Vite,
   Sass,
   Git,
   Css,

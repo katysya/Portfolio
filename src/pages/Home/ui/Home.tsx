@@ -6,7 +6,6 @@ import { loadSlim } from 'tsparticles-slim';
 
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
 
 import '../../../../app/styles/global.scss';
 import './Home.scss';
