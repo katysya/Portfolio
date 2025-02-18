@@ -5,6 +5,7 @@ import Hashtag from './Hashtag/Hashtag';
 import PrimaryButton from './PrimaryButton/PrimaryButton';
 import MainMarquee from './MainMarquee/MainMarquee';
 import StackItem from './StackItem/StackItem';
+import Avatar from './Avatar/Avatar';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -17,4 +18,5 @@ export {
   PrimaryButton,
   MainMarquee,
   StackItem,
+  Avatar,
 };

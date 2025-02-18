@@ -9,10 +9,20 @@ import { WorkExperience } from '../../../entities/WorkExperience/index';
 import { EducationCard } from '../../../entities/Education';
 
 import { PrimaryButton } from '../../../shared/ui';
+import { AvatarSection } from '../../../features/Avatar';
+
+import PhotoAvatar from '../assets/images/avatar.webp';
 
 import './About.scss';
 
 const data = {
+  avatar: {
+    path: PhotoAvatar,
+    descriptionPath: 'Avatar',
+    title: 'I am a Frontend Developer',
+    subtitle:
+      'I am just a curious guy who loves creating cool and fun stuff. I like to dive into different areas just because they intrigue me, and once ve got the hang of it, I move on to something new. Im all about crafting enjoyable experiences and finding creative, realistic solutions that fit the context and work with the challenges at hand.',
+  },
   experience: [
     {
       id: 1,
@@ -79,6 +89,14 @@ const About = () => {
 
   return (
     <div className={`about ${isDark ? 'dark' : 'light'}`}>
+      <div className="about__avatar">
+        <AvatarSection
+          pathAvatar={data.avatar.path}
+          descriptionAvatar={data.avatar.descriptionPath}
+          title={data.avatar.title}
+          subtitle={data.avatar.subtitle}
+        />
+      </div>
       <PortfolioSection />
       <div className="about__experience about__section">
         <h2 className="about__title" ref={textRef}>
