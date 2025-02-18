@@ -1,11 +1,10 @@
-import { PortfolioCard } from '../../../entities/PortfolioCard';
-import { LocationCard } from '../../../entities/LocationCard';
-import { MainMarquee } from '../../../shared/ui';
-import { StackItem } from '../../../shared/ui';
+import { PortfolioCard } from '../../../../entities/PortfolioCard';
+import { LocationCard } from '../../../../entities/LocationCard';
+import { MainMarquee } from '../../../../shared/ui';
+import { StackItem } from '../../../../shared/ui';
 
 import './PortfolioSection.scss';
 
-// TODO: Перенести в Feature
 const PortfolioSection = () => {
   const size = 38;
 

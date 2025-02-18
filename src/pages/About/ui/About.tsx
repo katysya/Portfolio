@@ -4,7 +4,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 import { useTheme } from '../../../../app/Context/ThemeContext';
 
-import { PortfolioSection } from '../../../widgets/PortfolioSection';
+import { PortfolioSection } from '../../../features/Portfolio';
 import { WorkExperience } from '../../../entities/WorkExperience/index';
 import { EducationCard } from '../../../entities/Education';
 
