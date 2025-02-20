@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Icon } from '../../../shared/ui';
+import { Icon, Switcher } from '../../../shared/ui';
 
 import './Navigation.scss';
 
@@ -13,14 +13,21 @@ const Navigation = () => {
           </Link>
         </li>
         <li className="navigation__item">
-          <Link to="/about">About</Link>
+          <Link className="navigation__link" to="/about">
+            About
+          </Link>
         </li>
         <li className="navigation__item">
-          <Link to="/projects">Projects</Link>
+          <Link className="navigation__link" to="/projects">
+            Projects
+          </Link>
         </li>
         <li className="navigation__item">
-          <Link to="/contact">Contact me</Link>
+          <Link className="navigation__link" to="/contact">
+            Contact me
+          </Link>
         </li>
+        <Switcher />
       </ul>
     </nav>
   );

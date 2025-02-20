@@ -22,6 +22,9 @@ import Git from '../assets/stack/Git.svg';
 import Css from '../assets/stack/Css.svg';
 import Magento from '../assets/stack/Magento.svg';
 
+import Sun from '../assets/theme/Sun.svg';
+import Moon from '../assets/theme/Moon.svg';
+
 export {
   Telegram,
   GitHub,
@@ -44,4 +47,6 @@ export {
   Git,
   Css,
   Magento,
+  Sun,
+  Moon,
 };

@@ -5,12 +5,17 @@
   &__toggle {
     display: grid;
     place-items: center;
-    width: 56px;
-    height: 56px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    background: $white;
+    background-color: $gray;
     box-shadow: $shadow;
     cursor: pointer;
+    transition: background-color 0.3s;
+
+    .dark & {
+      background-color: $black-200;
+    }
   }
 
   &__icon {

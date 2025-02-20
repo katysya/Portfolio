@@ -28,7 +28,10 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    padding: 0 32px 0 0;
+  }
+
+  &__link {
+    font-size: calc(14px + 4 * $size);
   }
 
   &__icon {
