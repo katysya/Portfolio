@@ -33,7 +33,23 @@
   }
 
   &__avatar {
+    position: relative;
     margin: 70px 0 160px;
+  }
+
+  &__grid {
+    position: absolute;
+    width: 300px;
+
+    &._top {
+      left: -20%;
+      top: -20%;
+    }
+
+    &._bottom {
+      right: -30%;
+      bottom: -40%;
+    }
   }
 
   &__subtitle {

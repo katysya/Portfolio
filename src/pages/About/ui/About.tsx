@@ -12,6 +12,7 @@ import { PrimaryButton } from '../../../shared/ui';
 import { AvatarSection } from '../../../features/Avatar';
 
 import PhotoAvatar from '../assets/images/avatar.webp';
+import Grid from '../assets/images/grid.png';
 
 import './About.scss';
 
@@ -90,12 +91,14 @@ const About = () => {
   return (
     <div className={`about ${isDark ? 'dark' : 'light'}`}>
       <div className="about__avatar">
+        <img className="about__grid _top" src={Grid} alt="" />
         <AvatarSection
           pathAvatar={data.avatar.path}
           descriptionAvatar={data.avatar.descriptionPath}
           title={data.avatar.title}
           subtitle={data.avatar.subtitle}
         />
+        <img className="about__grid _bottom" src={Grid} alt="" />
       </div>
       <PortfolioSection />
       <div className="about__experience about__section">

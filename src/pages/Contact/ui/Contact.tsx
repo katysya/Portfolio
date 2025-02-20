@@ -1,13 +1,11 @@
+import { FormContact } from '../../../features/Contact';
+
 import './Contact.scss';
 
 const Contact = () => {
   return (
     <div className="contact">
-      <div>Contact</div>
-      <div>Contact</div>
-      <div>Contact</div>
-      <div>Contact</div>
-      <div>Contact</div>
+      <FormContact />
     </div>
   );
 };

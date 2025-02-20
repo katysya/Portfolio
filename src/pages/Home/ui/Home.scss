@@ -8,6 +8,8 @@
     color: $white;
     font-size: 4.5rem;
     text-align: center;
+    user-select: none;
+    cursor: default;
   }
 
   &__highlighted {
