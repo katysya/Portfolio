@@ -6,6 +6,8 @@ import PrimaryButton from './PrimaryButton/PrimaryButton';
 import MainMarquee from './MainMarquee/MainMarquee';
 import StackItem from './StackItem/StackItem';
 import Avatar from './Avatar/Avatar';
+import MainInput from './MainInput/MainInput';
+import TextArea from './TextArea/TextArea';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -19,4 +21,6 @@ export {
   MainMarquee,
   StackItem,
   Avatar,
+  MainInput,
+  TextArea,
 };

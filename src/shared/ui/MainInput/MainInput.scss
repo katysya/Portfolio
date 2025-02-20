@@ -1,0 +1,12 @@
+.main-input {
+  width: 100%;
+  padding: 14px 12px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid $black-200;
+  font-size: calc(14px + 4 * $size);
+
+  &::placeholder {
+    color: $gray-100;
+  }
+}

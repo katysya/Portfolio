@@ -1,0 +1,13 @@
+.textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid $black-200;
+  color: $white;
+  background: transparent;
+  font-size: calc(14px + 4 * $size);
+  resize: none;
+
+  &::placeholder {
+    color: $gray-100;
+  }
+}

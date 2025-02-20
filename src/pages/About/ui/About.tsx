@@ -140,6 +140,7 @@ const About = () => {
       <PrimaryButton
         variant="link"
         text="Download CV"
+        icon="Download"
         href="path_to_file"
         download="proposed_file_name"
       ></PrimaryButton>

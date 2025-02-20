@@ -4,6 +4,7 @@ import './PrimaryButton.scss';
 interface IPrimaryButton {
   variant: string;
   text: string;
+  icon: string;
   href?: string | null;
   disabled?: boolean | null;
   download?: string | null;
@@ -12,6 +13,7 @@ interface IPrimaryButton {
 const PrimaryButton = ({
   variant,
   text,
+  icon,
   href,
   disabled,
   download,
@@ -26,7 +28,7 @@ const PrimaryButton = ({
       {...(download && { download: download })}
     >
       {text}
-      <Icon name="Download" size={22} color="currentColor" />
+      <Icon name={icon} size={18} color="currentColor" />
     </Component>
   );
 };
