@@ -7,6 +7,9 @@ import { EducationCard } from '../../../entities/Education';
 import { PrimaryButton } from '../../../shared/ui';
 import { AvatarSection } from '../../../features/Avatar';
 
+import { AnimationCard } from '../../../shared/config/constants';
+import { motion } from 'framer-motion';
+
 import PhotoAvatar from '../assets/images/avatar.webp';
 import Grid from '../assets/images/grid.png';
 
@@ -86,14 +89,21 @@ const About = () => {
           <div className="about__subtitle">Experience</div>
           <div className="about__list">
             {data.experience.map((item, index) => (
-              <WorkExperience
-                key={index}
-                time={item.time}
-                nameCompany={item.nameCompany}
-                position={item.position}
-                responsibilities={item.responsibilities}
-                hashtags={item.hashtags}
-              />
+              <motion.div
+                variants={AnimationCard}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.25 }}
+              >
+                <WorkExperience
+                  key={index}
+                  time={item.time}
+                  nameCompany={item.nameCompany}
+                  position={item.position}
+                  responsibilities={item.responsibilities}
+                  hashtags={item.hashtags}
+                />
+              </motion.div>
             ))}
           </div>
         </div>
@@ -104,12 +114,19 @@ const About = () => {
           <div className="about__subtitle">Education</div>
           <div className="about__list">
             {data.edication.map((item, index) => (
-              <EducationCard
-                key={index}
-                name={item.name}
-                position={item.position}
-                time={item.time}
-              />
+              <motion.div
+                variants={AnimationCard}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <EducationCard
+                  key={index}
+                  name={item.name}
+                  position={item.position}
+                  time={item.time}
+                />
+              </motion.div>
             ))}
           </div>
         </div>
