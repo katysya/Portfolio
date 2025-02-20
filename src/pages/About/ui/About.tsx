@@ -1,7 +1,3 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
-
 import { useTheme } from '../../../../app/Context/ThemeContext';
 
 import { PortfolioSection } from '../../../features/Portfolio';
@@ -69,24 +65,7 @@ const data = {
 };
 
 const About = () => {
-  const textRef = useRef(null);
   const { isDark } = useTheme();
-
-  useEffect(() => {
-    gsap.registerPlugin(TextPlugin);
-
-    const targetText = 'My Experience';
-
-    gsap.to(textRef.current, {
-      duration: 3,
-      text: {
-        value: targetText,
-      },
-      ease: 'none',
-      repeat: -1,
-      repeatDelay: 1,
-    });
-  }, []);
 
   return (
     <div className={`about ${isDark ? 'dark' : 'light'}`}>
@@ -102,9 +81,7 @@ const About = () => {
       </div>
       <PortfolioSection />
       <div className="about__experience about__section">
-        <h2 className="about__title" ref={textRef}>
-          Loading...
-        </h2>
+        <h2 className="about__title">My Experience</h2>
         <div className="about__block">
           <div className="about__subtitle">Experience</div>
           <div className="about__list">
