@@ -1,0 +1,17 @@
+.star {
+  transition: transform 0.5s;
+  animation: sparkle 1s infinite;
+  animation-delay: inherit;
+}
+
+@keyframes sparkle {
+  from {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}

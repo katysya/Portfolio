@@ -9,6 +9,8 @@ import Avatar from './Avatar/Avatar';
 import MainInput from './MainInput/MainInput';
 import TextArea from './TextArea/TextArea';
 import MainParticles from './MainParticles/MainParticles';
+import Star from './Star/Star';
+import GridStars from './GridStars/GridStars';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -25,4 +27,6 @@ export {
   MainInput,
   TextArea,
   MainParticles,
+  Star,
+  GridStars,
 };

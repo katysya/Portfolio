@@ -36,7 +36,7 @@
 
     &._highlighted {
       &::before {
-        content: url('../../../../pages/Contact/assets/images/star.svg');
+        content: '';
         position: absolute;
         top: 0;
         left: 0;

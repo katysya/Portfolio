@@ -4,7 +4,7 @@ import { PortfolioSection } from '../../../features/Portfolio';
 import { WorkExperience } from '../../../entities/WorkExperience/index';
 import { EducationCard } from '../../../entities/Education';
 
-import { PrimaryButton } from '../../../shared/ui';
+import { PrimaryButton, Star } from '../../../shared/ui';
 import { AvatarSection } from '../../../features/Avatar';
 
 import { AnimationCard } from '../../../shared/config/constants';
@@ -73,16 +73,36 @@ const About = () => {
   return (
     <div className={`about ${isDark ? 'dark' : 'light'}`}>
       <div className="about__avatar">
-        <img className="about__grid _top" src={Grid} alt="" />
         <AvatarSection
           pathAvatar={data.avatar.path}
           descriptionAvatar={data.avatar.descriptionPath}
           title={data.avatar.title}
           subtitle={data.avatar.subtitle}
         />
-        <img className="about__grid _bottom" src={Grid} alt="" />
+      </div>
+      <div className="about__grid-star">
+        <div className="about__grid-star-item _1">
+          <Star size={18} delay={500} />
+        </div>
+        <div className="about__grid-star-item _2">
+          <Star size={28} delay={0} />
+        </div>
+        <div className="about__grid-star-item _3">
+          <Star size={40} delay={1100} />
+        </div>
       </div>
       <PortfolioSection />
+      <div className="about__grid-star">
+        <div className="about__grid-star-item _4">
+          <Star size={16} delay={500} />
+        </div>
+        <div className="about__grid-star-item _5">
+          <Star size={32} delay={0} />
+        </div>
+        <div className="about__grid-star-item _6">
+          <Star size={50} delay={800} />
+        </div>
+      </div>
       <div className="about__experience about__section">
         <h2 className="about__title">My Experience</h2>
         <div className="about__block">
@@ -90,13 +110,13 @@ const About = () => {
           <div className="about__list">
             {data.experience.map((item, index) => (
               <motion.div
+                key={index}
                 variants={AnimationCard}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.25 }}
               >
                 <WorkExperience
-                  key={index}
                   time={item.time}
                   nameCompany={item.nameCompany}
                   position={item.position}
@@ -115,13 +135,13 @@ const About = () => {
           <div className="about__list">
             {data.edication.map((item, index) => (
               <motion.div
+                key={index}
                 variants={AnimationCard}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <EducationCard
-                  key={index}
                   name={item.name}
                   position={item.position}
                   time={item.time}

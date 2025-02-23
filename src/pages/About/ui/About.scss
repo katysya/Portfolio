@@ -37,21 +37,6 @@
     margin: 70px 0 160px;
   }
 
-  &__grid {
-    position: absolute;
-    width: 300px;
-
-    &._top {
-      left: -20%;
-      top: -20%;
-    }
-
-    &._bottom {
-      right: -30%;
-      bottom: -40%;
-    }
-  }
-
   &__subtitle {
     display: flex;
     align-items: center;
@@ -87,5 +72,46 @@
 
   &__edication {
     margin-bottom: 80px;
+  }
+
+  &__grid-star {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &-item {
+      position: absolute;
+
+      &._1 {
+        top: 10px;
+        left: -10%;
+      }
+
+      &._2 {
+        top: 28px;
+        left: -6%;
+      }
+
+      &._3 {
+        top: -40px;
+        left: 0%;
+      }
+
+      &._4 {
+        top: -40px;
+        right: 0%;
+      }
+
+      &._5 {
+        top: -10px;
+        right: -15%;
+      }
+
+      &._6 {
+        top: -80px;
+        right: -7%;
+      }
+    }
   }
 }

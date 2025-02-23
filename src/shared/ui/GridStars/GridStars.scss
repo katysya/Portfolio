@@ -1,0 +1,24 @@
+.grid-stars {
+  display: grid;
+  grid-template-rows: 120px 70px 70px;
+  grid-template-columns: 120px 70px 70px 30px;
+  width: fit-content;
+
+  &__item {
+    position: relative;
+    border-right: 1px solid $black-200;
+    border-bottom: 1px solid $black-200;
+
+    &:nth-child(4n) {
+      border-right: 1px solid transparent;
+    }
+
+    &:nth-last-child(-n + 4) {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  &__star {
+    width: fit-content;
+  }
+}

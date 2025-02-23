@@ -9,6 +9,7 @@ import Stack from '../assets/general/Stack.svg';
 import Location from '../assets/general/Location.svg';
 import Victory from '../assets/general/Victory.svg';
 import Send from '../assets/general/Send.svg';
+import Star from '../assets/general/Star.svg';
 
 import Figma from '../assets/stack/Figma.svg';
 import React from '../assets/stack/React.svg';
@@ -36,6 +37,7 @@ export {
   Location,
   Victory,
   Send,
+  Star,
   Figma,
   React,
   Js,

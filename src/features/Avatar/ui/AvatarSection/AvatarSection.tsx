@@ -1,4 +1,4 @@
-import { Avatar } from '../../../../shared/ui';
+import { Avatar, GridStars } from '../../../../shared/ui';
 
 import './AvatarSection.scss';
 
@@ -17,9 +17,15 @@ const AvatarSection = ({
 }: IAvatarSection) => {
   return (
     <div className="avatar-section">
+      <div className="avatar-section__grid _top">
+        <GridStars />
+      </div>
       <Avatar path={pathAvatar} description={descriptionAvatar} />
       <div className="avatar-section__title">{title}</div>
       <div className="avatar-section__subtitle">{subtitle}</div>
+      <div className="avatar-section__grid _bottom">
+        <GridStars />
+      </div>
     </div>
   );
 };
