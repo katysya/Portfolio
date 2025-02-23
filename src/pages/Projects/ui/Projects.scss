@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
 
   &.dark {
   }
 
   &__title {
+    margin: 0 0 70px;
     text-align: center;
     font-size: calc(18px + 12 * $size);
     font-weight: 500;
@@ -21,5 +21,30 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    margin: 0 0 90px;
+  }
+
+  &__grid-stars {
+    position: relative;
+    width: 100%;
+
+    &-item {
+      position: absolute;
+      width: fit-content;
+
+      &._1 {
+        top: -20px;
+        left: 33%;
+      }
+
+      &._2 {
+        left: 30%;
+      }
+
+      &._3 {
+        top: 30px;
+        left: 33%;
+      }
+    }
   }
 }

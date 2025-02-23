@@ -1,4 +1,8 @@
-import { Avatar, GridStars } from '../../../../shared/ui';
+import {
+  Avatar,
+  GridStars,
+  AnimateElement,
+} from '../../../../shared/ui';
 
 import './AvatarSection.scss';
 
@@ -21,7 +25,9 @@ const AvatarSection = ({
         <GridStars />
       </div>
       <Avatar path={pathAvatar} description={descriptionAvatar} />
-      <div className="avatar-section__title">{title}</div>
+      <AnimateElement element="title" amount={0.25} once={true}>
+        <div className="avatar-section__title">{title}</div>
+      </AnimateElement>
       <div className="avatar-section__subtitle">{subtitle}</div>
       <div className="avatar-section__grid _bottom">
         <GridStars />

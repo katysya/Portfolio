@@ -1,8 +1,10 @@
 import { useTheme } from '../../../../app/Context/ThemeContext';
-import { motion } from 'framer-motion';
 import { ProjectCard } from '../../../entities/ProjectCard';
-import { PrimaryButton } from '../../../shared/ui';
-import { AnimationCard } from '../../../shared/config/constants';
+import {
+  PrimaryButton,
+  Star,
+  AnimateElement,
+} from '../../../shared/ui';
 
 import './Projects.scss';
 
@@ -11,19 +13,27 @@ function Projects() {
 
   return (
     <div className={`projects ${isDark ? 'dark' : 'light'}`}>
-      <h2 className="projects__title">MY Projects 👀</h2>
+      <div className="projects__grid-stars">
+        <div className="projects__grid-stars-item _1">
+          <Star size={18} delay={500} />
+        </div>
+        <div className="projects__grid-stars-item _2">
+          <Star size={28} delay={0} />
+        </div>
+        <div className="projects__grid-stars-item _3">
+          <Star size={40} delay={1100} />
+        </div>
+      </div>
+      <AnimateElement element="title" amount={0.25} once={true}>
+        <h2 className="projects__title">MY Projects 👀</h2>
+      </AnimateElement>
       <div className="projects__list">
-        {[...Array(4)].map((_, index) => (
-          <motion.div
-            key={index}
-            className="project-card-wrapper"
-            variants={AnimationCard}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <ProjectCard />
-          </motion.div>
+        {[...Array(4)].map((index) => (
+          <div key={index}>
+            <AnimateElement element="card" amount={0.25} once={true}>
+              <ProjectCard />
+            </AnimateElement>
+          </div>
         ))}
       </div>
       <PrimaryButton

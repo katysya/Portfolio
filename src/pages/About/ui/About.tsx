@@ -3,15 +3,15 @@ import { useTheme } from '../../../../app/Context/ThemeContext';
 import { PortfolioSection } from '../../../features/Portfolio';
 import { WorkExperience } from '../../../entities/WorkExperience/index';
 import { EducationCard } from '../../../entities/Education';
-
-import { PrimaryButton, Star } from '../../../shared/ui';
 import { AvatarSection } from '../../../features/Avatar';
 
-import { AnimationCard } from '../../../shared/config/constants';
-import { motion } from 'framer-motion';
+import {
+  PrimaryButton,
+  Star,
+  AnimateElement,
+} from '../../../shared/ui';
 
 import PhotoAvatar from '../assets/images/avatar.webp';
-import Grid from '../assets/images/grid.png';
 
 import './About.scss';
 
@@ -104,49 +104,64 @@ const About = () => {
         </div>
       </div>
       <div className="about__experience about__section">
-        <h2 className="about__title">My Experience</h2>
+        <AnimateElement element="title" amount={0.25} once={true}>
+          <h2 className="about__title">My Experience</h2>
+        </AnimateElement>
         <div className="about__block">
           <div className="about__subtitle">Experience</div>
           <div className="about__list">
             {data.experience.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={AnimationCard}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.25 }}
-              >
-                <WorkExperience
-                  time={item.time}
-                  nameCompany={item.nameCompany}
-                  position={item.position}
-                  responsibilities={item.responsibilities}
-                  hashtags={item.hashtags}
-                />
-              </motion.div>
+              <div key={index}>
+                <AnimateElement
+                  element="card"
+                  amount={0.25}
+                  once={true}
+                >
+                  <WorkExperience
+                    time={item.time}
+                    nameCompany={item.nameCompany}
+                    position={item.position}
+                    responsibilities={item.responsibilities}
+                    hashtags={item.hashtags}
+                  />
+                </AnimateElement>
+              </div>
             ))}
           </div>
         </div>
       </div>
       <div className="about__edication about__section">
-        <h2 className="about__title">MY Education</h2>
+        <div className="about__grid-star">
+          <div className="about__grid-star-item _1">
+            <Star size={18} delay={500} />
+          </div>
+          <div className="about__grid-star-item _2">
+            <Star size={28} delay={0} />
+          </div>
+          <div className="about__grid-star-item _3">
+            <Star size={40} delay={1100} />
+          </div>
+        </div>
+        <AnimateElement element="title" amount={0.25} once={true}>
+          <h2 className="about__title">MY Education</h2>
+        </AnimateElement>
         <div className="about__block">
           <div className="about__subtitle">Education</div>
           <div className="about__list">
             {data.edication.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={AnimationCard}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-              >
-                <EducationCard
-                  name={item.name}
-                  position={item.position}
-                  time={item.time}
-                />
-              </motion.div>
+              <div key={index}>
+                <AnimateElement
+                  element="card"
+                  amount={0.25}
+                  once={true}
+                >
+                  <EducationCard
+                    name={item.name}
+                    position={item.position}
+                    time={item.time}
+                  />
+                </AnimateElement>
+              </div>
             ))}
           </div>
         </div>

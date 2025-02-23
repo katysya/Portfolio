@@ -11,6 +11,7 @@ import TextArea from './TextArea/TextArea';
 import MainParticles from './MainParticles/MainParticles';
 import Star from './Star/Star';
 import GridStars from './GridStars/GridStars';
+import AnimateElement from './AnimateElement/AnimateElement';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -29,4 +30,5 @@ export {
   MainParticles,
   Star,
   GridStars,
+  AnimateElement,
 };
