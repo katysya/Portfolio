@@ -1,0 +1,19 @@
+.item-card {
+  &._character {
+    width: fit-content;
+    padding: 8px 12px;
+    border: 1px solid $gray-100;
+    border-radius: $radius-xs;
+    font-size: calc(12px + 3 * $size);
+  }
+
+  &._stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: $radius-xxxs;
+    background: $gray-200;
+  }
+}

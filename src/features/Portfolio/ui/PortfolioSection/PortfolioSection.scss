@@ -27,7 +27,30 @@
   }
 
   &__values {
+    position: relative;
     grid-area: 3 / 2 / 5 / 3;
+
+    &-item {
+      position: absolute;
+
+      &._1 {
+        left: 10px;
+        top: 53%;
+        rotate: -8deg;
+      }
+
+      &._2 {
+        right: 5px;
+        top: 71%;
+        rotate: 6deg;
+      }
+
+      &._3 {
+        left: 10px;
+        bottom: 2px;
+        rotate: -2deg;
+      }
+    }
   }
 
   &__everywhere {

@@ -1,7 +1,6 @@
 import { PortfolioCard } from '../../../../entities/PortfolioCard';
 import { LocationCard } from '../../../../entities/LocationCard';
-import { MainMarquee } from '../../../../shared/ui';
-import { StackItem } from '../../../../shared/ui';
+import { MainMarquee, ItemCard } from '../../../../shared/ui';
 
 import './PortfolioSection.scss';
 
@@ -32,29 +31,68 @@ const PortfolioSection = () => {
           text="If you like using these tools too, we'll get along just fine."
         >
           <MainMarquee speed={30}>
-            <StackItem
+            <ItemCard
+              variant="stack"
               name="React"
               size={size}
               color="currentColor"
             />
-            <StackItem name="Next" size={size} color="currentColor" />
-            <StackItem
+            <ItemCard
+              variant="stack"
+              name="Next"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
               name="Redux"
               size={size}
               color="currentColor"
             />
-            <StackItem name="Vite" size={size} color="currentColor" />
-            <StackItem name="Js" size={size} color="currentColor" />
-            <StackItem name="Html" size={size} color="currentColor" />
-            <StackItem name="Sass" size={size} color="currentColor" />
-            <StackItem name="Css" size={size} color="currentColor" />
-            <StackItem
+            <ItemCard
+              variant="stack"
+              name="Vite"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
+              name="Js"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
+              name="Html"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
+              name="Sass"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
+              name="Css"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
               name="Figma"
               size={size}
               color="currentColor"
             />
-            <StackItem name="Git" size={size} color="currentColor" />
-            <StackItem
+            <ItemCard
+              variant="stack"
+              name="Git"
+              size={size}
+              color="currentColor"
+            />
+            <ItemCard
+              variant="stack"
               name="Magento"
               size={size}
               color="currentColor"
@@ -67,7 +105,26 @@ const PortfolioSection = () => {
           icon="Victory"
           title="Take a look at my values"
           text="Through various projects, I've acquired valuable skills."
-        />
+        >
+          <div className="portfolio-section__values-item _1">
+            <ItemCard
+              variant="character"
+              text="Attention to detail"
+            />
+          </div>
+          <div className="portfolio-section__values-item _2">
+            <ItemCard
+              variant="character"
+              text="Responsible approach to work"
+            />
+          </div>
+          <div className="portfolio-section__values-item _3">
+            <ItemCard
+              variant="character"
+              text="Focus on efficiency and quality"
+            />
+          </div>
+        </PortfolioCard>
       </div>
       <div className="portfolio-section__location">
         <LocationCard />
