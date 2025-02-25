@@ -1,4 +1,4 @@
-import { Icon } from '../../../shared/ui/index';
+import { Icon, ContactLink } from '../../../shared/ui/index';
 import { useTheme } from '../../../../app/Context/ThemeContext';
 
 import './Footer.scss';
@@ -42,17 +42,13 @@ const Footer = () => {
           </div>
           <div className="footer__social">
             {settingsIcon.map((item) => (
-              <a
-                href={item.url}
-                className="footer__link"
+              <ContactLink
                 key={item.id}
-              >
-                <Icon
-                  name={item.name}
-                  size={item.size}
-                  color={`${isDark ? 'white' : 'dark'}`}
-                ></Icon>
-              </a>
+                variant="mini"
+                url={item.url}
+                name={item.name}
+                size={item.size}
+              />
             ))}
           </div>
         </div>

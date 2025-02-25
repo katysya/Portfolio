@@ -12,6 +12,7 @@ import Star from './Star/Star';
 import GridStars from './GridStars/GridStars';
 import AnimateElement from './AnimateElement/AnimateElement';
 import ItemCard from './ItemCard/ItemCard';
+import ContactLink from './ContactLink/ContactLink';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -31,4 +32,5 @@ export {
   GridStars,
   AnimateElement,
   ItemCard,
+  ContactLink,
 };

@@ -21,19 +21,6 @@
     color: inherit;
   }
 
-  &__link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1) rotate(0deg);
-    transition: all 0.3s;
-
-    &:hover {
-      transform: scale(1.4) rotate(360deg);
-    }
-  }
-
   .dark {
     color: $white;
   }
