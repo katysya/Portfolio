@@ -9,11 +9,11 @@ import './FormContact.scss';
 const FormContact = () => {
   return (
     <form className="form-contact">
+      <div className="form-contact__title">Contact With Me</div>
       <div className="form-contact__block">
-        <MainInput type="text" placeholder="Name*" />
         <MainInput type="email" placeholder="Email*" />
+        <TextArea />
       </div>
-      <TextArea />
       <PrimaryButton
         variant="submit"
         text="Submit"

@@ -4,7 +4,9 @@
   color: inherit;
   background: transparent;
   border: 1px solid $black-200;
-  font-size: calc(14px + 4 * $size);
+  font-size: calc(12px + 2 * $size);
+  font-weight: 300;
+  letter-spacing: 1.5px;
 
   &::placeholder {
     color: $gray-100;

@@ -4,25 +4,17 @@ import { useTheme } from '../../../../app/Context/ThemeContext';
 import './ContactLink.scss';
 
 interface IContactLink {
-  key: number;
   variant: string;
   url: string;
   name: string;
   size: number;
 }
 
-const ContactLink = ({
-  key,
-  variant,
-  url,
-  name,
-  size,
-}: IContactLink) => {
+const ContactLink = ({ variant, url, name, size }: IContactLink) => {
   const { isDark } = useTheme();
 
   return (
     <a
-      key={key}
       href={url}
       className={`contact-link ${
         variant === 'mini' ? '_mini' : '_max'
@@ -31,9 +23,11 @@ const ContactLink = ({
       <Icon
         name={name}
         size={size}
-        color={`${isDark ? 'white' : 'dark'}`}
+        color={`${isDark ? 'white' : 'black'}`}
       ></Icon>
-      {variant !== 'mini' && <div>{name}</div>}
+      {variant !== 'mini' && (
+        <div className="contact-link__name">{name}</div>
+      )}
     </a>
   );
 };

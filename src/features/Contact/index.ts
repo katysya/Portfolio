@@ -1,4 +1,5 @@
 import FormContact from './ui/FormContact/FormContact';
-import ContainerContact from './ui/ContainerContact/ContainerContact';
+import SectionContact from './ui/SectionContact/SectionContact';
+import SocialContact from './ui/SocialContact/SocialContact';
 
-export { FormContact, ContainerContact };
+export { FormContact, SectionContact, SocialContact };

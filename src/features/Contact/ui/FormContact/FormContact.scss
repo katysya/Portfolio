@@ -1,13 +1,20 @@
 .form-contact {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-items: center;
-  width: 100%;
+  width: 450px;
+
+  &__title {
+    margin: 0 0 26px;
+    font-size: calc(18px + 4 * $size);
+    font-weight: 600;
+  }
 
   &__block {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 16px;
     width: 100%;
+    margin: 0 0 20px;
   }
 }

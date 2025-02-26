@@ -1,0 +1,79 @@
+.social-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &__heading {
+    font-size: calc(14px + 2 * $size);
+  }
+
+  &__icons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__icon {
+    position: relative;
+  }
+
+  .Telegram::before,
+  .GitHub::before,
+  .Email::before,
+  .LinkedIn::before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    width: 5em;
+    height: 1px;
+    rotate: -45deg;
+    background: linear-gradient(90deg, #ffffff, transparent);
+  }
+
+  .Telegram::before {
+    top: -700%;
+    left: 1050%;
+    animation: 5s shootingStar ease-in-out infinite;
+    animation-delay: 1s;
+  }
+
+  .GitHub::before {
+    top: -1300%;
+    left: 850%;
+    animation: 4s shootingStar ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  .Email::before {
+    top: -2100%;
+    left: 850%;
+    animation: 4s shootingStar ease-in-out infinite;
+    animation-delay: 5s;
+  }
+
+  .LinkedIn::before {
+    top: -1000%;
+    left: 400%;
+    animation: 3s shootingStar ease-in-out infinite;
+    animation-delay: 8s;
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-55em) translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-70em) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+}

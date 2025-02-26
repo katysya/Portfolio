@@ -4,10 +4,25 @@
   border: 1px solid $black-200;
   color: $white;
   background: transparent;
-  font-size: calc(14px + 4 * $size);
+  font-size: calc(12px + 2 * $size);
+  font-weight: 300;
   resize: none;
 
   &::placeholder {
     color: $gray-100;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $gray-100;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-200;
+    border-radius: 100px;
   }
 }
