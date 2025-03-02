@@ -9,6 +9,14 @@
   text-transform: uppercase;
   cursor: default;
 
+  ._dark & {
+    color: $white;
+  }
+
+  ._light & {
+    color: $black;
+  }
+
   &__text {
     transition: opacity 0.3s;
   }

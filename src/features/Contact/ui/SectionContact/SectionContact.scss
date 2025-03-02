@@ -5,11 +5,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
   font-weight: bold;
   padding: 1em 2em 1em 1em;
   overflow: hidden;
   row-gap: 1em;
+
+  ._dark & {
+    color: $white;
+  }
+
+  ._light & {
+    color: $black;
+  }
 
   &__block {
     position: relative;
@@ -20,9 +27,16 @@
     gap: 36px;
     padding: 24px 20px 20px;
     margin: 8px 0;
-    background-color: $black-400;
     border: 2px solid $black-200;
     border-radius: $radius-xs;
+
+    ._dark & {
+      background-color: $black-400;
+    }
+
+    ._light & {
+      background-color: $gray-200;
+    }
   }
 
   &__stars {

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Icon, Switcher } from '../../../shared/ui';
-
 import './Navigation.scss';
 
 const Navigation = () => {

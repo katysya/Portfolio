@@ -8,8 +8,6 @@ import { Footer } from '../../../widgets/Footer/index';
 
 import { AnimatedRoutes } from '../../../../app/providers/router';
 
-import './MainPage.scss';
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>

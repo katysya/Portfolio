@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0 100px;
+  padding-bottom: 90px;
 
   &__title {
     position: relative;
@@ -46,8 +46,15 @@
     width: 100%;
     height: 50px;
     font-size: calc(20px + 6 * $size);
-    color: $white;
     opacity: 0.5;
+
+    ._dark & {
+      color: $white;
+    }
+
+    ._light & {
+      color: $black;
+    }
   }
 
   &__section {

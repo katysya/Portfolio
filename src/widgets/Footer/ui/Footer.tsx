@@ -9,7 +9,7 @@ const Footer = () => {
   const { isDark } = useTheme();
 
   return (
-    <footer className={`footer ${isDark ? 'dark' : 'light'}`}>
+    <footer className={`footer ${isDark ? '_dark' : '_light'}`}>
       <div className="container footer__container">
         <div className="footer__content">
           <div className="footer__text">

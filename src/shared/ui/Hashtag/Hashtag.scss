@@ -2,6 +2,13 @@
   width: fit-content;
   padding: 10px;
   border-radius: $radius-xxs;
-  background: $black-200;
   opacity: 0.8;
+
+  ._dark & {
+    background: $black-200;
+  }
+
+  ._light & {
+    background: $white;
+  }
 }

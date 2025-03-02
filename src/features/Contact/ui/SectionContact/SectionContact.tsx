@@ -32,7 +32,7 @@ const SectionContact = () => {
       <div
         className="section-contact__stars _1"
         style={{
-          boxShadow: generateStars(50),
+          boxShadow: generateStars(140),
         }}
       ></div>
       <div
@@ -44,7 +44,7 @@ const SectionContact = () => {
       <div
         className="section-contact__stars _3"
         style={{
-          boxShadow: generateStars(30),
+          boxShadow: generateStars(120),
         }}
       ></div>
     </div>

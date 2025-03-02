@@ -1,0 +1,9 @@
+.animate-page {
+  &._dark {
+    background: $black;
+  }
+
+  &._light {
+    background: $white;
+  }
+}

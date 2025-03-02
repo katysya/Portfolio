@@ -1,5 +1,13 @@
 .footer {
-  color: $black;
+  &._dark {
+    color: $white;
+    background-color: $black;
+  }
+
+  &._light {
+    color: $black;
+    background-color: $white;
+  }
 
   &__container {
     border-top: 1px solid $gray;
@@ -19,9 +27,5 @@
 
   &__text {
     color: inherit;
-  }
-
-  .dark {
-    color: $white;
   }
 }

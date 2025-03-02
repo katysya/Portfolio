@@ -1,15 +1,22 @@
 .home {
   display: flex;
   align-items: center;
-  min-height: 60vh;
+  min-height: 73vh;
   margin-bottom: 100px;
 
   &__text {
-    color: $white;
     font-size: 4.5rem;
     text-align: center;
     user-select: none;
     cursor: default;
+
+    ._dark & {
+      color: $white;
+    }
+
+    ._white {
+      color: $black;
+    }
   }
 
   &__highlighted {

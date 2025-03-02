@@ -1,6 +1,9 @@
 import { CSSProperties, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { Transition } from 'framer-motion';
+import { useTheme } from '../../../../app/Context/ThemeContext';
+
+import './AnimatePage.scss';
 
 interface IAnimateProps {
   children?: ReactNode;
@@ -22,22 +25,27 @@ const AnimatePage = ({
   variants,
   transition,
   style,
-}: IAnimateProps) => (
-  <motion.div
-    initial="initial"
-    animate="animate"
-    exit="exit"
-    variants={animateProperty[variants]}
-    transition={transition}
-    style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      ...style,
-    }}
-  >
-    {children}
-  </motion.div>
-);
+}: IAnimateProps) => {
+  const { isDark } = useTheme();
+
+  return (
+    <motion.div
+      className={`animate-page ${isDark ? '_dark' : '_light'}`}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={animateProperty[variants]}
+      transition={transition}
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        ...style,
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 export default AnimatePage;

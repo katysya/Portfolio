@@ -1,5 +1,3 @@
-import { useTheme } from '../../../../app/Context/ThemeContext';
-
 import './TextLabel.scss';
 
 interface ITextLabel {
@@ -13,14 +11,8 @@ const Textlabel = ({
   secondaryText,
   active,
 }: ITextLabel) => {
-  const { isDark } = useTheme();
-
   return (
-    <div
-      className={`text-label ${isDark ? 'dark' : 'light'} ${
-        active ? 'active' : ''
-      }`}
-    >
+    <div className={`text-label ${active ? 'active' : ''}`}>
       <p className="text-label__primary text-label__text">
         {primaryText}
       </p>

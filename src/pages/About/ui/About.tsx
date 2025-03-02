@@ -71,7 +71,7 @@ const About = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className={`about ${isDark ? 'dark' : 'light'}`}>
+    <div className={`page about ${isDark ? 'dark' : 'light'}`}>
       <div className="about__avatar">
         <AvatarSection
           pathAvatar={data.avatar.path}

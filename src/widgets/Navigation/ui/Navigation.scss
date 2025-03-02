@@ -7,6 +7,11 @@
   color: $white;
   overflow: visible;
 
+  ._light & {
+    background: $gray;
+    color: $black;
+  }
+
   &::before {
     content: '';
     position: absolute;

@@ -2,8 +2,11 @@ import Particles from 'react-particles';
 import { useCallback } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
+import { useTheme } from '../../../../app/Context/ThemeContext';
 
 const MainParticles = () => {
+  const { isDark } = useTheme();
+
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
@@ -46,10 +49,10 @@ const MainParticles = () => {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: isDark ? '#ffffff' : '#000000',
           },
           links: {
-            color: '#ffffff',
+            color: isDark ? '#ffffff' : '#000000',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -70,7 +73,7 @@ const MainParticles = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 100,
           },
           opacity: {
             value: 0.1,

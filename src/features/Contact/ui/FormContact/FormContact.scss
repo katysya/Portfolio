@@ -4,10 +4,19 @@
   align-items: center;
   width: 450px;
 
+  ._dark & {
+    color: $white;
+  }
+
+  ._light & {
+    color: $black;
+  }
+
   &__title {
     margin: 0 0 26px;
     font-size: calc(18px + 4 * $size);
     font-weight: 600;
+    color: inherit;
   }
 
   &__block {
@@ -16,5 +25,6 @@
     gap: 16px;
     width: 100%;
     margin: 0 0 20px;
+    color: inherit;
   }
 }
