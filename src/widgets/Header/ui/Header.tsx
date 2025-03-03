@@ -16,7 +16,9 @@ const Header = () => {
             secondaryText="Екатерина"
             active={false}
           ></TextLabel>
-          <Navigation></Navigation>
+          <div className="header__navigation">
+            <Navigation />
+          </div>
           <TextLabel
             primaryText="Frontend"
             secondaryText="Developer"

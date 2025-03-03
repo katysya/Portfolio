@@ -2,11 +2,18 @@
   width: 100%;
   padding: 10px 12px;
   border: 1px solid $black-200;
-  color: $white;
   background: transparent;
   font-size: calc(12px + 2 * $size);
   font-weight: 300;
   resize: none;
+
+  ._dark & {
+    color: $white;
+  }
+
+  ._light & {
+    color: $black;
+  }
 
   &::placeholder {
     color: $gray-100;

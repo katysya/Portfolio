@@ -15,17 +15,70 @@
 
   &__content {
     display: flex;
-    padding: 34px 0 24px;
+    align-items: center;
     justify-content: space-between;
   }
 
   &__social {
     display: flex;
     align-items: center;
-    gap: 40px;
   }
 
   &__text {
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    font-size: calc(10px + 6 * $size);
+  }
+}
+
+@media #{$mobile500} {
+  .footer {
+    &__social {
+      order: -1;
+      gap: 30px;
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px 0 12px;
+    }
+  }
+}
+
+@media #{$mobile768} {
+  .footer {
+    &__content {
+      padding: 20px 0 10px;
+    }
+
+    &__social {
+      gap: 25px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .footer {
+    &__social {
+      gap: 30px;
+    }
+
+    &__content {
+      padding: 24px 0 20px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .footer {
+    &__social {
+      gap: 40px;
+    }
+
+    &__content {
+      padding: 34px 0 24px;
+    }
   }
 }

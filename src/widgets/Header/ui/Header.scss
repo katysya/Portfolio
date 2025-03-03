@@ -9,3 +9,21 @@
     justify-content: space-between;
   }
 }
+
+@media #{$mobile} {
+  .header {
+    padding: 16px 0;
+
+    &__container {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__navigation {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

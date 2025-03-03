@@ -31,13 +31,13 @@ body {
 }
 
 .container {
-  max-width: 1090px;
   width: 100%;
   margin: 0 auto;
 }
 
 .page {
   padding-top: 150px;
+  min-height: calc(100vh - 80.8px);
 }
 
 body::-webkit-scrollbar-track {
@@ -61,4 +61,22 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.72, #8f81bb),
     color-stop(0.86, #882fd6)
   );
+}
+
+@media #{$noDesktop} {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media #{$desktop1024} {
+  .container {
+    max-width: 92%;
+  }
+}
+
+@media #{$desktop1200} {
+  .container {
+    max-width: 1090px;
+  }
 }

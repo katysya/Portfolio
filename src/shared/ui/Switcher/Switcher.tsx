@@ -4,10 +4,10 @@ import { Icon } from '../../../shared/ui';
 import './Switcher.scss';
 
 const Switcher = () => {
-  const { isDark, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
-    <div className={`switcher ${isDark ? 'dark' : 'light'}`}>
+    <div className="switcher">
       <label className="switcher__toggle" htmlFor="switch">
         <input
           id="switch"

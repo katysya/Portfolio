@@ -31,17 +31,15 @@
     position: relative;
     z-index: 5;
     display: flex;
-    gap: 40px;
     align-items: center;
   }
 
   &__link {
-    font-size: calc(14px + 4 * $size);
+    font-size: calc(14px + 6 * $size);
   }
 
   &__icon {
     display: block;
-    padding: 6px 16px;
     border-radius: $radius-s;
     background: $black-200;
   }
@@ -56,5 +54,59 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media #{$mobile500} {
+  .navigation {
+    width: 100%;
+
+    &__list {
+      gap: 10px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media #{$mobile768} {
+  .navigation {
+    &__list {
+      gap: 20px;
+    }
+  }
+}
+@media #{$mobile} {
+  .navigation {
+    &__icon {
+      padding: 4px 8px;
+    }
+  }
+}
+
+@media #{$noMobile} {
+  .navigation {
+    &__list {
+      gap: 28px;
+    }
+
+    &__icon {
+      padding: 6px 16px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .navigation {
+    &__list {
+      gap: 28px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .navigation {
+    &__list {
+      gap: 40px;
+    }
   }
 }

@@ -21,9 +21,18 @@
     color: $gray-100;
     transition: border 0.3s;
 
-    &:hover {
-      color: $white;
-      border: 1px solid $white;
+    ._dark & {
+      &:hover {
+        color: $white;
+        border: 1px solid $white;
+      }
+    }
+
+    ._light & {
+      &:hover {
+        color: $black;
+        border: 1px solid $black;
+      }
     }
   }
 

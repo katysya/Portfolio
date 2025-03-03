@@ -8,13 +8,17 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: $gray;
-    box-shadow: $shadow;
     cursor: pointer;
     transition: background-color 0.3s;
 
-    .dark & {
+    ._dark & {
       background-color: $black-200;
+      box-shadow: $shadow;
+    }
+
+    ._light & {
+      background-color: $gray;
+      box-shadow: $shadow-light;
     }
   }
 

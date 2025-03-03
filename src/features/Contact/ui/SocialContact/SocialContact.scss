@@ -28,7 +28,14 @@
     width: 5em;
     height: 1px;
     rotate: -45deg;
-    background: linear-gradient(90deg, #ffffff, transparent);
+
+    ._dark & {
+      background: linear-gradient(90deg, $white, transparent);
+    }
+
+    ._light & {
+      background: linear-gradient(90deg, $black, transparent);
+    }
   }
 
   .Telegram::before {
