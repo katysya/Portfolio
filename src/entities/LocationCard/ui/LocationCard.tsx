@@ -15,7 +15,7 @@ const LocationCard = () => {
         />
       </div>
       <div className="location-card__place">
-        <Icon name="Location" size={20} color="currentColor" />
+        <Icon name="Location" size={18} color="currentColor" />
         Rostov-on-Don
       </div>
     </div>

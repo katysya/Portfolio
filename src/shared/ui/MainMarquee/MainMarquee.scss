@@ -1,7 +1,31 @@
-.main-marquee {
-  max-width: 316px;
+@media #{$mobile768} {
+  .main-marquee {
+    max-width: calc(100vw / 2 - 30px);
+  }
+}
 
+@media #{$mobile} {
   .rfm-child {
-    margin: 0 8px;
+    margin: 0 4px;
+  }
+}
+
+@media #{$noMobile} {
+  .main-marquee {
+    .rfm-child {
+      margin: 0 8px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .main-marquee {
+    max-width: 226px;
+  }
+}
+
+@media #{$desktop} {
+  .main-marquee {
+    max-width: 316px;
   }
 }

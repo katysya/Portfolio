@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   gap: 20px;
-  padding: 40px 30px;
   border-radius: 1.25rem;
   background-size: 30px 30px;
   background-position: -5px -5px;
@@ -37,11 +36,6 @@
     width: 100%;
   }
 
-  &__img {
-    width: 36px;
-    height: 36px;
-  }
-
   &__name {
     margin: 0 0 12px;
     font-size: calc(18px + 4 * $size);
@@ -49,12 +43,8 @@
     color: $purple;
   }
 
-  &__position {
-    margin: 0 0 30px;
-  }
-
   &__time {
-    font-size: calc(14px + 4 * $size);
+    font-size: calc(12px + 6 * $size);
     letter-spacing: 2px;
   }
 
@@ -73,6 +63,92 @@
 
   &__hashtags {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media #{$mobile500} {
+  .work-experience {
+    &__hashtags {
+      gap: 8px;
+    }
+  }
+}
+
+@media #{$mobile768} {
+  .work-experience {
+    &__hashtags {
+      gap: 10px;
+    }
+  }
+}
+
+@media #{$mobile} {
+  .work-experience {
+    padding: 18px;
+
+    &__img {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__position {
+      margin: 0 0 20px;
+    }
+
+    &__name {
+      margin: 0 0 8px;
+    }
+
+    &__top {
+      margin: 0 0 16px;
+    }
+
+    &__responsibilities {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media #{$noMobile} {
+  .work-experience {
+    padding: 40px 30px;
+
+    &__img {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__hashtags {
+      gap: 15px;
+    }
+
+    &__position {
+      margin: 0 0 30px;
+    }
+
+    &__name {
+      margin: 0 0 12px;
+    }
+
+    &__top {
+      margin: 0 0 20px;
+    }
+
+    &__responsibilities {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .work-experience {
+    padding: 25px 20px;
+  }
+}
+
+@media #{$desktop} {
+  .work-experience {
+    padding: 40px 30px;
   }
 }

@@ -6,7 +6,7 @@
   align-items: center;
   border-radius: $radius-xs;
   background: url('../assets/images/location.webp') no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   cursor: pointer;
   transition: all 0.4s;
@@ -16,8 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
     margin: 0 auto;
 
     &::after {
@@ -48,14 +46,49 @@
     gap: 2px;
     align-items: center;
     width: fit-content;
-    padding: 3px 10px 3px 6px;
     border-radius: $radius-xs;
     background: $white;
     color: $black;
-    font-size: calc(10px + 4 * $size);
+    font-size: calc(8px + 6 * $size);
   }
 
   &:hover {
     background-size: 120% auto;
+  }
+}
+
+@media #{$mobile} {
+  .location-card {
+    &__avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__img {
+      width: 27px;
+      height: 34px;
+    }
+
+    &__place {
+      padding: 1px 8px 1px 2px;
+    }
+  }
+}
+
+@media #{$noMobile} {
+  .location-card {
+    &__avatar {
+      width: 60px;
+      height: 60px;
+    }
+
+    &__img {
+      width: 40px;
+      height: 55px;
+    }
+
+    &__place {
+      padding: 3px 10px 3px 6px;
+    }
   }
 }

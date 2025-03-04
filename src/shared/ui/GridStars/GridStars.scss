@@ -1,7 +1,5 @@
 .grid-stars {
   display: grid;
-  grid-template-rows: 120px 70px 70px;
-  grid-template-columns: 120px 70px 70px 30px;
   width: fit-content;
 
   &__item {
@@ -20,5 +18,33 @@
 
   &__star {
     width: fit-content;
+  }
+}
+
+@media #{$mobile500} {
+  .grid-stars {
+    grid-template-rows: 45px 30px 25px;
+    grid-template-columns: 45px 30px 25px 15px;
+  }
+}
+
+@media #{$mobile768} {
+  .grid-stars {
+    grid-template-rows: 60px 45px 45px;
+    grid-template-columns: 60px 45px 45px 15px;
+  }
+}
+
+@media #{$tablet} {
+  .grid-stars {
+    grid-template-rows: 90px 65px 65px;
+    grid-template-columns: 90px 65px 65px 25px;
+  }
+}
+
+@media #{$desktop} {
+  .grid-stars {
+    grid-template-rows: 120px 70px 70px;
+    grid-template-columns: 120px 70px 70px 30px;
   }
 }

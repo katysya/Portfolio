@@ -1,7 +1,7 @@
 .hashtag {
   width: fit-content;
-  padding: 10px;
   border-radius: $radius-xxs;
+  font-size: calc(10px + 6 * $size);
   opacity: 0.8;
 
   ._dark & {
@@ -10,5 +10,17 @@
 
   ._light & {
     background: $white;
+  }
+}
+
+@media #{$mobile} {
+  .hashtag {
+    padding: 8px;
+  }
+}
+
+@media #{$noMobile} {
+  .hashtag {
+    padding: 10px;
   }
 }

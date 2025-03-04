@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 90px;
 
   &__title {
     position: relative;
@@ -11,7 +10,6 @@
     color: $black;
     font-weight: 500;
     font-size: calc(22px + 8 * $size);
-    margin: 50px 0 60px;
     text-transform: uppercase;
 
     .dark & {
@@ -45,7 +43,7 @@
     top: 10px;
     width: 100%;
     height: 50px;
-    font-size: calc(20px + 6 * $size);
+    font-size: calc(16px + 10 * $size);
     opacity: 0.5;
 
     ._dark & {
@@ -65,7 +63,6 @@
 
   &__block {
     display: grid;
-    grid-template-columns: 250px 800px;
   }
 
   &__list {
@@ -77,10 +74,6 @@
     margin-bottom: 100px;
   }
 
-  &__edication {
-    margin-bottom: 80px;
-  }
-
   &__grid-star {
     position: relative;
     left: 0;
@@ -89,35 +82,243 @@
 
     &-item {
       position: absolute;
+    }
+  }
+}
 
-      &._1 {
-        top: 10px;
-        left: -10%;
+@media #{$mobile500} {
+  .about {
+    &__subtitle {
+      display: none;
+    }
+
+    &__grid-star {
+      &-item {
+        &._4 {
+          top: 8px;
+          right: 17%;
+        }
+
+        &._6 {
+          top: 41px;
+          left: 12%;
+        }
       }
+    }
+  }
+}
 
-      &._2 {
-        top: 28px;
-        left: -6%;
+@media #{$mobile768} {
+  .about {
+    &__block {
+      grid-template-columns: 120px 76%;
+    }
+
+    &__grid-star {
+      &-item {
+        &._4 {
+          top: 28px;
+          right: 16%;
+        }
+
+        &._6 {
+          top: 64px;
+          right: 5%;
+        }
       }
+    }
+  }
+}
 
-      &._3 {
-        top: -40px;
-        left: 0%;
+@media #{$mobile} {
+  .about {
+    padding-bottom: 50px;
+
+    &__block {
+      padding: 0 16px;
+    }
+
+    &__title {
+      margin: 0px 0 40px;
+    }
+
+    &__experience {
+      margin-top: 80px;
+    }
+
+    &__edication {
+      margin-bottom: 40px;
+    }
+
+    &__grid-star {
+      &-item {
+        &._1 {
+          top: -34px;
+          left: 5%;
+        }
+
+        &._2 {
+          top: -43px;
+          left: 17%;
+        }
+
+        &._3 {
+          top: -68px;
+          left: 10%;
+        }
+
+        &._5 {
+          top: 25px;
+          right: 3%;
+        }
       }
+    }
+  }
+}
 
-      &._4 {
-        top: -40px;
-        right: 0%;
+@media #{$noMobile} {
+  .about {
+    &__title {
+      margin: 50px 0 60px;
+    }
+
+    &__edication {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .about {
+    padding-bottom: 60px;
+
+    &__subtitle {
+      justify-content: center;
+    }
+
+    &__block {
+      grid-template-columns: 170px 560px;
+    }
+
+    &__grid-star {
+      &-item {
+        &._1 {
+          top: -2px;
+          left: 3%;
+        }
+
+        &._2 {
+          top: 10px;
+          left: 14%;
+        }
+
+        &._3 {
+          top: -36px;
+          left: 9%;
+        }
+
+        &._4 {
+          top: -22px;
+          right: 17%;
+        }
+
+        &._5 {
+          top: -33px;
+          right: 6%;
+        }
+
+        &._6 {
+          top: 20px;
+          right: 7%;
+        }
       }
+    }
+  }
+}
 
-      &._5 {
-        top: -10px;
-        right: -15%;
+@media #{$desktop1024} {
+  .about {
+    padding-bottom: 70px;
+
+    &__block {
+      grid-template-columns: 180px 80%;
+    }
+
+    &__grid-star {
+      &-item {
+        &._1 {
+          top: -30px;
+          left: 5%;
+        }
+
+        &._2 {
+          top: -55px;
+          left: 14%;
+        }
+
+        &._3 {
+          top: -79px;
+          left: 9%;
+        }
+
+        &._4 {
+          top: 9px;
+          right: 14%;
+        }
+
+        &._5 {
+          top: 40px;
+          right: 3%;
+        }
+
+        &._6 {
+          top: -20px;
+          right: 5%;
+        }
       }
+    }
+  }
+}
 
-      &._6 {
-        top: -80px;
-        right: -7%;
+@media #{$desktop1200} {
+  .about {
+    padding-bottom: 90px;
+
+    &__block {
+      grid-template-columns: 250px 800px;
+    }
+
+    &__grid-star {
+      &-item {
+        &._1 {
+          top: 10px;
+          left: -4%;
+        }
+
+        &._2 {
+          top: -7px;
+          left: 4%;
+        }
+
+        &._3 {
+          top: -60px;
+          left: 0%;
+        }
+
+        &._4 {
+          top: 20px;
+          right: 7%;
+        }
+
+        &._5 {
+          top: 56px;
+          right: -2%;
+        }
+
+        &._6 {
+          top: -14px;
+          right: -1%;
+        }
       }
     }
   }
