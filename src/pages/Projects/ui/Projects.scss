@@ -78,24 +78,3 @@
     }
   }
 }
-
-.scroll-container-block {
-  position: relative;
-  width: 100%;
-}
-
-.scroll-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: fit-content; /* Длинная страница, чтобы можно было скроллить */ /* Длинная страница для прокрутки */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll-animation {
-  width: 100%;
-  height: 1694px;
-}
