@@ -3,6 +3,7 @@ import { Hashtag } from '../../../shared/ui';
 import './ProjectCard.scss';
 
 import Project1 from '../assets/images/project-1.webp';
+import Project1Mini from '../assets/images/project-1-mini.webp';
 
 const ProjectCard = () => {
   return (
@@ -35,7 +36,11 @@ const ProjectCard = () => {
           </li>
         </ul>
       </div>
-      <img className="project-card__img" src={Project1} alt="" />
+      {/* <img className="project-card__img" src={Project1} alt="" /> */}
+      <picture>
+        <source srcSet={Project1Mini} media="(max-width: 768px)" />
+        <img className="project-card__img" src={Project1} alt="" />
+      </picture>
     </a>
   );
 };

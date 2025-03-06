@@ -1,11 +1,11 @@
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid $black-200;
-  padding: 170px 0 80px;
 
   &::before {
     content: '';
@@ -13,6 +13,7 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     --gap: 5em;
@@ -37,7 +38,6 @@
   }
 
   &__title {
-    margin: 0 0 70px;
     text-align: center;
     font-size: calc(18px + 12 * $size);
     font-weight: 500;
@@ -48,9 +48,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 0 0 90px;
   }
 
   &__grid-stars {
@@ -61,20 +58,96 @@
     &-item {
       position: absolute;
       width: fit-content;
+    }
+  }
+}
 
-      &._1 {
-        top: -20px;
-        left: 33%;
-      }
+@media #{$mobile} {
+  .projects {
+    padding: 190px 0 50px;
 
-      &._2 {
-        left: 30%;
-      }
+    &__title {
+      margin: 0 0 50px;
+    }
 
-      &._3 {
-        top: 30px;
-        left: 33%;
+    &__list {
+      gap: 24px;
+      margin: 0 0 40px;
+    }
+
+    &__grid-stars {
+      &-item {
+        &._1 {
+          top: -25px;
+          left: 15%;
+        }
+
+        &._2 {
+          left: 10%;
+        }
+
+        &._3 {
+          top: 28px;
+          left: 19%;
+        }
       }
+    }
+  }
+}
+
+@media #{$noMobile} {
+  .projects {
+    &__title {
+      margin: 0 0 70px;
+    }
+
+    &__grid-stars {
+      &-item {
+        &._1 {
+          top: -20px;
+          left: 33%;
+        }
+
+        &._2 {
+          left: 30%;
+        }
+
+        &._3 {
+          top: 30px;
+          left: 33%;
+        }
+      }
+    }
+  }
+}
+
+@media #{$noDesktop} {
+  .projects {
+    &__list {
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .projects {
+    padding: 170px 0 70px;
+
+    &__list {
+      margin: 0 0 70px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .projects {
+    padding: 170px 0 80px;
+
+    &__list {
+      max-width: 1000px;
+      gap: 50px;
+      margin: 0 0 90px;
     }
   }
 }
