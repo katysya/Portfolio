@@ -13,11 +13,8 @@
   }
 
   &._max {
-    gap: 12px;
-    width: 80px;
     border: 1px solid $gray-100;
     border-radius: $radius-xxs;
-    padding: 12px 8px;
     color: $gray-100;
     transition: border 0.3s;
 
@@ -38,8 +35,28 @@
 
   &__name {
     color: inherit;
-    font-size: calc(12px + 2 * $size);
+    font-size: calc(10px + 4 * $size);
     font-weight: 300;
     transition: color 0.2s;
+  }
+}
+
+@media #{$mobile} {
+  .contact-link {
+    &._max {
+      gap: 10px;
+      width: 60px;
+      padding: 8px 4px;
+    }
+  }
+}
+
+@media #{$noMobile} {
+  .contact-link {
+    &._max {
+      gap: 12px;
+      width: 80px;
+      padding: 12px 8px;
+    }
   }
 }
