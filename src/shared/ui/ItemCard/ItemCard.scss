@@ -1,10 +1,9 @@
 .item-card {
   &._character {
     width: fit-content;
-    padding: 8px 12px;
     border: 1px solid $purple;
     border-radius: $radius-xs;
-    font-size: calc(12px + 3 * $size);
+    font-size: calc(10px + 5 * $size);
   }
 
   &._stack {
@@ -15,5 +14,21 @@
     height: 54px;
     border-radius: $radius-xxxs;
     background: $gray-200;
+  }
+}
+
+@media #{$noDesktop} {
+  .item-card {
+    &._character {
+      padding: 5px 8px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .item-card {
+    &._character {
+      padding: 8px 12px;
+    }
   }
 }

@@ -6,7 +6,6 @@
   align-items: center;
   border-radius: $radius-xs;
   background: url('../assets/images/location.webp') no-repeat;
-  background-size: cover;
   background-position: center;
   cursor: pointer;
   transition: all 0.4s;
@@ -51,10 +50,6 @@
     color: $black;
     font-size: calc(8px + 6 * $size);
   }
-
-  &:hover {
-    background-size: 120% auto;
-  }
 }
 
 @media #{$mobile} {
@@ -89,6 +84,22 @@
 
     &__place {
       padding: 3px 10px 3px 6px;
+    }
+  }
+}
+
+@media #{$noDesktop} {
+  .location-card {
+    background-size: cover;
+  }
+}
+
+@media #{$desktop} {
+  .location-card {
+    background-size: 100% auto;
+
+    &:hover {
+      background-size: 120% auto;
     }
   }
 }

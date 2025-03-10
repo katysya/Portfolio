@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
 import { PortfolioCard } from '../../../../entities/PortfolioCard';
+import { ContactData } from '../../../../shared/config/constants';
 import { LocationCard } from '../../../../entities/LocationCard';
-import { MainMarquee, ItemCard } from '../../../../shared/ui';
+import {
+  MainMarquee,
+  ItemCard,
+  FitnessAnimation,
+  ContactLink,
+  PrimaryButton,
+  Icon,
+} from '../../../../shared/ui';
 
 import './PortfolioSection.scss';
 
@@ -17,12 +26,37 @@ const PortfolioSection = () => {
           Let's know more about me
         </h3>
       </div>
-      <div className="portfolio-section__language">
+      <div className="portfolio-section__info">
         <PortfolioCard
-          icon="Stack"
-          title="Take a look at my values"
+          icon="Stars"
+          title="Contact me"
           text="Through various projects, I've acquired valuable skills."
-        />
+        >
+          <div className="portfolio-section__info-block">
+            <div className="portfolio-section__icons">
+              {ContactData.map((item, index) => (
+                <div
+                  className={`portfolio-section__icon ${item.name}`}
+                  key={index}
+                >
+                  <ContactLink
+                    variant="max"
+                    url={item.url}
+                    name={item.name}
+                    size={item.size}
+                  />
+                </div>
+              ))}
+            </div>
+            <PrimaryButton
+              variant="link"
+              text="Download CV"
+              icon="Download"
+              href="path_to_file"
+              download="proposed_file_name"
+            ></PrimaryButton>
+          </div>
+        </PortfolioCard>
       </div>
       <div className="portfolio-section__stack">
         <PortfolioCard
@@ -131,10 +165,14 @@ const PortfolioSection = () => {
       </div>
       <div className="portfolio-section__everywhere">
         <PortfolioCard
-          icon="Stack"
-          title="Take a look at my values"
-          text="Through various projects, I've acquired valuable skills."
-        />
+          icon="Clover"
+          title="Hobby"
+          text="I do fitness and strength training, developing discipline,
+            endurance and maintaining a healthy lifestyle for high
+            performance."
+        >
+          <FitnessAnimation />
+        </PortfolioCard>
       </div>
     </div>
   );

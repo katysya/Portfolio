@@ -20,12 +20,13 @@
 
 @media #{$tablet} {
   .main-marquee {
-    max-width: 226px;
+    max-width: calc(100vw / 3 - 24px);
   }
 }
 
 @media #{$desktop} {
   .main-marquee {
     max-width: 316px;
+    padding-bottom: 25px;
   }
 }

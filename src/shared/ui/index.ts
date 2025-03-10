@@ -13,6 +13,7 @@ import GridStars from './GridStars/GridStars';
 import AnimateElement from './AnimateElement/AnimateElement';
 import ItemCard from './ItemCard/ItemCard';
 import ContactLink from './ContactLink/ContactLink';
+import FitnessAnimation from './FitnessAnimation/FitnessAnimation';
 
 import AnimatePage from './AnimatePage/AnimatePage';
 
@@ -33,4 +34,5 @@ export {
   AnimateElement,
   ItemCard,
   ContactLink,
+  FitnessAnimation,
 };

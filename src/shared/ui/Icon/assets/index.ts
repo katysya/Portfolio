@@ -10,6 +10,8 @@ import Location from '../assets/general/Location.svg';
 import Victory from '../assets/general/Victory.svg';
 import Send from '../assets/general/Send.svg';
 import Star from '../assets/general/Star.svg';
+import Clover from '../assets/general/Clover.svg';
+import Stars from '../assets/general/Stars.svg';
 
 import Figma from '../assets/stack/Figma.svg';
 import React from '../assets/stack/React.svg';
@@ -36,6 +38,7 @@ export {
   Stack,
   Location,
   Victory,
+  Clover,
   Send,
   Star,
   Figma,
@@ -51,4 +54,5 @@ export {
   Magento,
   Sun,
   Moon,
+  Stars,
 };

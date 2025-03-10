@@ -1,0 +1,99 @@
+.fitness-animation {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    stroke: $purple;
+  }
+
+  &__path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+
+    &._1 {
+      animation: draw 4s infinite;
+    }
+
+    &._2 {
+      animation: draw 4.6s infinite 1s;
+    }
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media #{$mobile500} {
+  .fitness-animation {
+    &__img {
+      &._1 {
+        bottom: -26px;
+        right: 8px;
+        width: 58%;
+      }
+
+      &._2 {
+        bottom: -30px;
+        left: 13px;
+        width: 46%;
+      }
+    }
+  }
+}
+
+@media #{$mobile768} {
+  .fitness-animation {
+    &__img {
+      &._1 {
+        bottom: -25px;
+        right: 4px;
+        width: 60%;
+      }
+
+      &._2 {
+        bottom: -27px;
+        left: 21px;
+        width: 47%;
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .fitness-animation {
+    &__img {
+      &._1 {
+        bottom: -24px;
+        right: 6px;
+        width: 74%;
+      }
+
+      &._2 {
+        bottom: -23px;
+        left: 6px;
+        width: 46%;
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  .fitness-animation {
+    &__img {
+      &._1 {
+        bottom: -20px;
+        right: 10px;
+        width: 80%;
+      }
+
+      &._2 {
+        bottom: -20px;
+        left: 10px;
+        width: 50%;
+      }
+    }
+  }
+}
