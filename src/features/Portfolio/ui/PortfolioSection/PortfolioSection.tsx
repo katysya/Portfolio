@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { PortfolioCard } from '../../../../entities/PortfolioCard';
 import { ContactData } from '../../../../shared/config/constants';
 import { LocationCard } from '../../../../entities/LocationCard';
@@ -8,7 +7,6 @@ import {
   FitnessAnimation,
   ContactLink,
   PrimaryButton,
-  Icon,
 } from '../../../../shared/ui';
 
 import './PortfolioSection.scss';

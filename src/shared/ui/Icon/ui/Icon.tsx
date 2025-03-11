@@ -4,12 +4,14 @@ import './Icon.scss';
 
 interface IIconProps {
   name: string;
-  size?: number | 24;
+  size?: number;
   color?: string;
 }
 
-const Icon = ({ name, size, color }: IIconProps) => {
-  const IconComponent = Icons[name as keyof typeof Icons];
+const Icon = ({ name, size = 24, color }: IIconProps) => {
+  const IconComponent = Icons[
+    name as keyof typeof Icons
+  ] as unknown as React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
   if (!IconComponent) {
     return null;

@@ -28,7 +28,7 @@ function Projects() {
         <h2 className="projects__title">MY Projects 👀</h2>
       </AnimateElement>
       <div className="projects__list">
-        {[...Array(4)].map((item, index) => (
+        {[...Array(4)].map((index) => (
           <div key={index}>
             <AnimateElement element="card" amount={0.25} once={true}>
               <ProjectCard />
