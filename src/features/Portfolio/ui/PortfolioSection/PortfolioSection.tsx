@@ -18,17 +18,17 @@ const PortfolioSection = () => {
     <div className="portfolio-section">
       <div className="portfolio-section__main">
         <p className="portfolio-section__subtitle">
-          Beyond portfolio
+          Помимо портфолио
         </p>
         <h3 className="portfolio-section__title">
-          Let's know more about me
+          Узнать обо мне больше
         </h3>
       </div>
       <div className="portfolio-section__info">
         <PortfolioCard
           icon="Stars"
-          title="Contact me"
-          text="Through various projects, I've acquired valuable skills."
+          title="Связаться со мной"
+          text="Для связи со мной вы можете написать мне или скачать моё резюме с подробной информацией обо мне:"
         >
           <div className="portfolio-section__info-block">
             <div className="portfolio-section__icons">
@@ -48,7 +48,7 @@ const PortfolioSection = () => {
             </div>
             <PrimaryButton
               variant="link"
-              text="Download CV"
+              text="Скачать Резюме"
               icon="Download"
               href="path_to_file"
               download="proposed_file_name"
@@ -59,8 +59,8 @@ const PortfolioSection = () => {
       <div className="portfolio-section__stack">
         <PortfolioCard
           icon="Stack"
-          title="My tech staks"
-          text="If you like using these tools too, we'll get along just fine."
+          title="Технический стек"
+          text="Мой стек технологий содержит следующее:"
         >
           <MainMarquee speed={30}>
             <ItemCard
@@ -135,25 +135,22 @@ const PortfolioSection = () => {
       <div className="portfolio-section__values">
         <PortfolioCard
           icon="Victory"
-          title="Take a look at my values"
-          text="Through various projects, I've acquired valuable skills."
+          title="Что для меня важно"
+          text="Благодаря различным проектам я приобрела ценные навыки:"
         >
           <div className="portfolio-section__values-item _1">
-            <ItemCard
-              variant="character"
-              text="Attention to detail"
-            />
+            <ItemCard variant="character" text="Внимание к деталям" />
           </div>
           <div className="portfolio-section__values-item _2">
             <ItemCard
               variant="character"
-              text="Responsible approach to work"
+              text="Ответственный подход к работе"
             />
           </div>
           <div className="portfolio-section__values-item _3">
             <ItemCard
               variant="character"
-              text="Focus on efficiency and quality"
+              text="Фокус на эффективности и качестве"
             />
           </div>
         </PortfolioCard>
@@ -164,10 +161,8 @@ const PortfolioSection = () => {
       <div className="portfolio-section__everywhere">
         <PortfolioCard
           icon="Clover"
-          title="Hobby"
-          text="I do fitness and strength training, developing discipline,
-            endurance and maintaining a healthy lifestyle for high
-            performance."
+          title="Хобби"
+          text="Я увлечена фитнесом и силовыми тренировками, которые помогают мне развивать дисциплину, выносливость и поддерживать здоровый образ жизни, что способствует высокой результативности во всех сферах жизни."
         >
           <FitnessAnimation />
         </PortfolioCard>

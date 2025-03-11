@@ -13,17 +13,17 @@ const Navigation = () => {
         </li>
         <li className="navigation__item">
           <Link className="navigation__link" to="/about">
-            About
+            Обо мне
           </Link>
         </li>
         <li className="navigation__item">
           <Link className="navigation__link" to="/projects">
-            Projects
+            Проекты
           </Link>
         </li>
         <li className="navigation__item">
           <Link className="navigation__link" to="/contact">
-            Contact me
+            Связаться
           </Link>
         </li>
         <Switcher />

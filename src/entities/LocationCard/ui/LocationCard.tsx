@@ -16,7 +16,7 @@ const LocationCard = () => {
       </div>
       <div className="location-card__place">
         <Icon name="Location" size={18} color="currentColor" />
-        Rostov-on-Don
+        Ростов-на-Дону
       </div>
     </div>
   );

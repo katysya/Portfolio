@@ -21,7 +21,7 @@ function Projects() {
         </div>
       </div>
       <AnimateElement element="title" amount={0.25} once={true}>
-        <h2 className="projects__title">MY Projects 👀</h2>
+        <h2 className="projects__title">Проекты 👀</h2>
       </AnimateElement>
       <div className="projects__list">
         {[...Array(4)].map((index) => (
@@ -34,7 +34,7 @@ function Projects() {
       </div>
       <PrimaryButton
         variant="link"
-        text="Download CV"
+        text="Скачать Резюме"
         icon="Download"
         href="path_to_file"
         download="proposed_file_name"

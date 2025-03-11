@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container footer__container">
         <div className="footer__content">
           <div className="footer__text">
-            &copy;2025. All right reserved.
+            &copy;2025. Все права защищены.
           </div>
           <div className="footer__social">
             {ContactData.map((item, index) => (

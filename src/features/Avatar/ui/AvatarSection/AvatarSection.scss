@@ -8,14 +8,22 @@
 
   &__title {
     margin: 80px 0 40px;
-    color: inherit;
     font-size: calc(20px + 30 * $size);
     text-align: center;
+
+    .light & {
+      color: $black;
+    }
+
+    .dark & {
+      color: inherit;
+    }
   }
 
   &__subtitle {
     color: $gray-100;
-    font-size: calc(14px + 10 * $size);
+    font-size: calc(12px + 12 * $size);
+    line-height: 1.1;
     font-weight: 300;
     text-align: center;
   }

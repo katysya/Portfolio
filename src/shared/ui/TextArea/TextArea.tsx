@@ -5,7 +5,7 @@ const TextArea = () => {
     <textarea
       className="textarea"
       rows={3}
-      placeholder="Message*"
+      placeholder="Сообщение*"
       required
     />
   );

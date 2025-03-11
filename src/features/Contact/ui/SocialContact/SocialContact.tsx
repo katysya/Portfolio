@@ -7,7 +7,7 @@ const SocialContact = () => {
   return (
     <div className="social-contact">
       <div className="social-contact__heading">
-        We're on Social Media
+        Дополнительно для связи
       </div>
       <div className="social-contact__icons">
         {ContactData.map((item, index) => (

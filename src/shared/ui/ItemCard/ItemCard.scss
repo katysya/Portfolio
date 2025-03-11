@@ -17,6 +17,14 @@
   }
 }
 
+@media #{$mobile500} {
+  .item-card {
+    &._character {
+      font-size: 18px;
+    }
+  }
+}
+
 @media #{$noDesktop} {
   .item-card {
     &._character {
