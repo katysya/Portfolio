@@ -1,4 +1,4 @@
-import { Hashtag } from '../../../shared/ui';
+import { Hashtag } from '@/shared/ui';
 
 import './ProjectCard.scss';
 

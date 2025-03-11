@@ -1,15 +1,11 @@
-import { useTheme } from '../../../../app/Context/ThemeContext';
+import { useTheme } from '@app/Context/ThemeContext';
 
-import { PortfolioSection } from '../../../features/Portfolio';
-import { WorkExperience } from '../../../entities/WorkExperience/index';
-import { EducationCard } from '../../../entities/Education';
-import { AvatarSection } from '../../../features/Avatar';
+import { PortfolioSection } from '@/features/Portfolio';
+import { WorkExperience } from '@/entities/WorkExperience';
+import { EducationCard } from '@/entities/Education';
+import { AvatarSection } from '@/features/Avatar';
 
-import {
-  PrimaryButton,
-  Star,
-  AnimateElement,
-} from '../../../shared/ui';
+import { PrimaryButton, Star, AnimateElement } from '@/shared/ui';
 
 import PhotoAvatar from '../assets/images/avatar.webp';
 

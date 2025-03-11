@@ -1,10 +1,6 @@
-import { useTheme } from '../../../../app/Context/ThemeContext';
-import { ProjectCard } from '../../../entities/ProjectCard';
-import {
-  PrimaryButton,
-  Star,
-  AnimateElement,
-} from '../../../shared/ui';
+import { useTheme } from '@app/Context/ThemeContext';
+import { ProjectCard } from '@/entities/ProjectCard';
+import { PrimaryButton, Star, AnimateElement } from '@/shared/ui';
 
 import './Projects.scss';
 

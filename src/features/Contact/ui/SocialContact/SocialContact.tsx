@@ -1,5 +1,5 @@
-import { ContactLink } from '../../../../shared/ui';
-import { ContactData } from '../../../../shared/config/constants';
+import { ContactLink } from '@/shared/ui';
+import { ContactData } from '@/shared/config/constants';
 
 import './SocialContact.scss';
 

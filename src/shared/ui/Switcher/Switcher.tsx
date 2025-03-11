@@ -1,5 +1,5 @@
-import { useTheme } from '../../../../app/Context/ThemeContext';
-import { Icon } from '../../../shared/ui';
+import { useTheme } from '@app/Context/ThemeContext';
+import { Icon } from '@/shared/ui';
 
 import './Switcher.scss';
 

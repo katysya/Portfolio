@@ -1,4 +1,4 @@
-import { SectionContact } from '../../../features/Contact';
+import { SectionContact } from '@/features/Contact';
 
 import './Contact.scss';
 

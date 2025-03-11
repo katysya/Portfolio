@@ -1,7 +1,7 @@
-import { ContactLink } from '../../../shared/ui/index';
-import { useTheme } from '../../../../app/Context/ThemeContext';
+import { ContactLink } from '@/shared/ui';
+import { useTheme } from '@app/Context/ThemeContext';
 
-import { ContactData } from '../../../shared/config/constants';
+import { ContactData } from '@/shared/config/constants';
 
 import './Footer.scss';
 

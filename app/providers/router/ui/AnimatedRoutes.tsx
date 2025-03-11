@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePage } from '../../../../src/shared/ui/index';
+import { AnimatePage } from '@/shared/ui';
 
 import { pages } from '../config';
 

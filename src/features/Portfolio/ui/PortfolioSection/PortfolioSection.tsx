@@ -1,13 +1,13 @@
-import { PortfolioCard } from '../../../../entities/PortfolioCard';
-import { ContactData } from '../../../../shared/config/constants';
-import { LocationCard } from '../../../../entities/LocationCard';
+import { PortfolioCard } from '@/entities/PortfolioCard';
+import { ContactData } from '@/shared/config/constants';
+import { LocationCard } from '@/entities/LocationCard';
 import {
   MainMarquee,
   ItemCard,
   FitnessAnimation,
   ContactLink,
   PrimaryButton,
-} from '../../../../shared/ui';
+} from '@/shared/ui';
 
 import './PortfolioSection.scss';
 

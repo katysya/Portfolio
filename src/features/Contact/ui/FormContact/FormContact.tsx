@@ -1,8 +1,4 @@
-import {
-  MainInput,
-  TextArea,
-  PrimaryButton,
-} from '../../../../shared/ui';
+import { MainInput, TextArea, PrimaryButton } from '@/shared/ui';
 
 import './FormContact.scss';
 

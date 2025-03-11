@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
-import '../../../../app/styles/global.scss';
+import '@app/styles/global.scss';
 import './Home.scss';
 
-import { MainParticles } from '../../../shared/ui';
+import { MainParticles } from '@/shared/ui';
 
 function Projects() {
   const textVariants = {

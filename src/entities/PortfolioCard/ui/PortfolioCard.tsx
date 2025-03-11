@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Icon } from '../../../shared/ui';
+import { Icon } from '@/shared/ui';
 
 import './PortfolioCard.scss';
 

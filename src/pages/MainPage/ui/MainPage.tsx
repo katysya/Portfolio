@@ -1,8 +1,8 @@
-import { Header } from '../../../widgets/Header/index';
-import { Footer } from '../../../widgets/Footer/index';
-import { AnimatedRoutes } from '../../../../app/providers/router';
+import { Header } from '@/widgets/Header';
+import { Footer } from '@/widgets/Footer';
+import { AnimatedRoutes } from '@app/providers/router';
 
-import { useTheme } from '../../../../app/Context/ThemeContext';
+import { useTheme } from '@app/Context/ThemeContext';
 
 import './MainPage.scss';
 

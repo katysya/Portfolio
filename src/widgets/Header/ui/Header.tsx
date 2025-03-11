@@ -1,6 +1,6 @@
-import { TextLabel } from '../../../shared/ui/index';
-import { Navigation } from '../../Navigation/index';
-import { useTheme } from '../../../../app/Context/ThemeContext';
+import { useTheme } from '@app/Context/ThemeContext';
+import { TextLabel } from '@/shared/ui';
+import { Navigation } from '../../Navigation';
 
 import './Header.scss';
 

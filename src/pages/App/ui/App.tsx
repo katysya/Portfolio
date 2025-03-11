@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ThemeProvider } from '../../../../app/Context/ThemeContext';
+import { ThemeProvider } from '@app/Context/ThemeContext';
 import { BrowserRouter } from 'react-router-dom';
-import { MainPage } from '../../MainPage/index';
+import { MainPage } from '../../MainPage';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

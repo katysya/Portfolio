@@ -1,8 +1,4 @@
-import {
-  Avatar,
-  GridStars,
-  AnimateElement,
-} from '../../../../shared/ui';
+import { Avatar, GridStars, AnimateElement } from '@/shared/ui';
 
 import './AvatarSection.scss';
 
