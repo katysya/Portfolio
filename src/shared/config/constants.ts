@@ -36,24 +36,24 @@ export const ContactData = [
     id: 1,
     name: 'Telegram',
     size: 22,
-    url: '#telegram',
+    url: 'https://t.me/katyusyafed',
   },
   {
     id: 2,
     name: 'GitHub',
     size: 22,
-    url: '#gitHub',
+    url: 'https://github.com/katysya?tab=repositories',
   },
   {
     id: 3,
     name: 'Email',
     size: 22,
-    url: '#email',
+    url: 'mailto:katharine.fed05@yandex.ru',
   },
   {
     id: 4,
     name: 'LinkedIn',
     size: 22,
-    url: '#linkedIn',
+    url: 'https://www.linkedin.com/in/ekaterina-fedyakina-65925b256/',
   },
 ];
