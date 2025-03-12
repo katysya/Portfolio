@@ -6,7 +6,7 @@ interface IPrimaryButton {
   text: string;
   icon: string;
   href?: string | null;
-  disabled?: boolean | null;
+  disabled?: boolean;
   download?: string | null;
 }
 
@@ -18,14 +18,16 @@ const PrimaryButton = ({
   disabled,
   download,
 }: IPrimaryButton) => {
-  const Component = variant === 'link' ? 'a' : 'button';
+  const Component = (variant === 'link' ? 'a' : 'button') as
+    | 'a'
+    | 'button';
 
   return (
     <Component
       className="primary-button"
-      {...(disabled && { disabled: true })}
-      {...(href && { href })}
-      {...(download && { download: download })}
+      {...(variant === 'link'
+        ? { href: href ?? undefined, download: download ?? undefined }
+        : { disabled, type: 'submit' })}
     >
       {text}
       <Icon name={icon} size={18} color="currentColor" />

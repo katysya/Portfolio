@@ -57,3 +57,11 @@ export const ContactData = [
     url: 'https://www.linkedin.com/in/ekaterina-fedyakina-65925b256/',
   },
 ];
+
+export const PortfolioBot = {
+  token: '7902189231:AAFULnrNU9bua_ABC6849OMlWd06kFndLtk',
+  chatId: '957305373',
+  get url() {
+    return `https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}`;
+  },
+};
