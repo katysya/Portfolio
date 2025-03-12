@@ -46,18 +46,24 @@ const FormContact = () => {
         >
           Сообщение отправлено ✨
         </div>
-        <MainInput
-          ref={emailRef}
-          type="email"
-          name="email"
-          placeholder="Email*"
-        />
-        <TextArea ref={messageRef} placeholder="Cообщение*" />
-        <PrimaryButton
-          variant="submit"
-          text="Отправить"
-          icon="Send"
-        ></PrimaryButton>
+        <div
+          className={`form-contact__fields ${
+            sendForm ? '_hide' : ''
+          }`}
+        >
+          <MainInput
+            ref={emailRef}
+            type="email"
+            name="email"
+            placeholder="Email*"
+          />
+          <TextArea ref={messageRef} placeholder="Cообщение*" />
+          <PrimaryButton
+            variant="submit"
+            text="Отправить"
+            icon="Send"
+          ></PrimaryButton>
+        </div>
       </div>
     </form>
   );
