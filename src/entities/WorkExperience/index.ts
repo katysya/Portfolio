@@ -1,3 +1,3 @@
-import WorkExperience from './ui/WorkExperience';
+import WorkExperience from './ui/WorkExperienceCard/WorkExperienceCard';
 
 export { WorkExperience };

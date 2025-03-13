@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import './Education.scss';
+
+import './EdicationCard.scss';
 
 interface IEducationCard {
   name: string;

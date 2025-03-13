@@ -2,7 +2,7 @@ import { Icon } from '@/shared/ui';
 
 import './LocationCard.scss';
 
-import LocationImg from '../assets/images/avatar.webp';
+import LocationImg from '../../assets/images/avatar.webp';
 
 const LocationCard = () => {
   return (

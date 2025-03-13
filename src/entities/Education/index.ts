@@ -1,3 +1,3 @@
-import EducationCard from './ui/Education';
+import EducationCard from './ui/EdicationCard/EdicationCard';
 
 export { EducationCard };

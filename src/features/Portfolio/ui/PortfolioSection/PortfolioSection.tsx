@@ -1,6 +1,6 @@
-import { PortfolioCard } from '@/entities/PortfolioCard';
+import { PortfolioCard } from '@/entities/Portfolio';
 import { ContactData } from '@/shared/config/constants';
-import { LocationCard } from '@/entities/LocationCard';
+import { LocationCard } from '@/entities/Location';
 import {
   MainMarquee,
   ItemCard,

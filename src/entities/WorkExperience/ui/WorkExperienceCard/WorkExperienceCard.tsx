@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { Hashtag } from '@/shared/ui';
 
-import Experience from '../assets/images/experience.webp';
+import Experience from '../../assets/images/experience.webp';
 
-import './WorkExperience.scss';
+import './WorkExperienceCard.scss';
 
 interface IExperience {
   time: string;
