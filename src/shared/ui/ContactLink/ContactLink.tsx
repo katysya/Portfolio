@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Icon } from '../index';
-import { useTheme } from '@/app/Context/ThemeContext';
+import { useTheme } from '@/shared/lib/theme';
 
 import './ContactLink.scss';
 

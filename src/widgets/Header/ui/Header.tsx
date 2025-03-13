@@ -1,4 +1,4 @@
-import { useTheme } from '@/app/Context/ThemeContext';
+import { useTheme } from '@/shared/lib/theme';
 import { TextLabel } from '@/shared/ui';
 import { Navigation } from '../../Navigation';
 

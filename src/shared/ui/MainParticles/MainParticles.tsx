@@ -2,7 +2,7 @@ import Particles from 'react-particles';
 import { useCallback } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
-import { useTheme } from '@/app/Context/ThemeContext';
+import { useTheme } from '@/shared/lib/theme';
 
 const MainParticles = () => {
   const { isDark } = useTheme();

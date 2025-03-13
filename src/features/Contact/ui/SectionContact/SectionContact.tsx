@@ -1,4 +1,4 @@
-import { useTheme } from '@/app/Context/ThemeContext';
+import { useTheme } from '@/shared/lib/theme';
 
 import { FormContact, SocialContact } from '../../index';
 

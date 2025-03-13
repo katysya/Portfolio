@@ -1,7 +1,7 @@
 import { CSSProperties, ReactNode, FC } from 'react';
 import { motion } from 'framer-motion';
 import { Transition } from 'framer-motion';
-import { useTheme } from '@/app/Context/ThemeContext';
+import { useTheme } from '@/shared/lib/theme';
 
 import './AnimatePage.scss';
 
