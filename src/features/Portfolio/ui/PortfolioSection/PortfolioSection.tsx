@@ -50,8 +50,6 @@ const PortfolioSection = () => {
               variant="link"
               text="Скачать Резюме"
               icon="Download"
-              href="path_to_file"
-              download="proposed_file_name"
             ></PrimaryButton>
           </div>
         </PortfolioCard>

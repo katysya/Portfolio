@@ -1,22 +1,19 @@
 import Icon from '../Icon/ui/Icon';
 import './PrimaryButton.scss';
+import Resume from '../../assets/doc/ekaterina_fedyakina.pdf';
 
 interface IPrimaryButton {
   variant: string;
   text: string;
   icon: string;
-  href?: string | null;
   disabled?: boolean;
-  download?: string | null;
 }
 
 const PrimaryButton = ({
   variant,
   text,
   icon,
-  href,
   disabled,
-  download,
 }: IPrimaryButton) => {
   const Component = (variant === 'link' ? 'a' : 'button') as
     | 'a'
@@ -26,7 +23,10 @@ const PrimaryButton = ({
     <Component
       className="primary-button"
       {...(variant === 'link'
-        ? { href: href ?? undefined, download: download ?? undefined }
+        ? {
+            href: Resume ?? undefined,
+            download: 'Resume_Fedyakina_Ekaterina',
+          }
         : { disabled, type: 'submit' })}
     >
       {text}
