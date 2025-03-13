@@ -58,7 +58,7 @@ const PortfolioSection = () => {
         <PortfolioCard
           icon="Stack"
           title="Технический стек"
-          text="Мой стек технологий содержит следующее:"
+          text="Я использую следующие технологии:"
         >
           <MainMarquee speed={30}>
             <ItemCard

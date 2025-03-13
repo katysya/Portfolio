@@ -15,18 +15,22 @@ function Projects() {
     }),
   };
 
+  const text = [
+    { text: 'Привет! Я ', highlight: 'Frontend Developer,' },
+    {
+      text: 'и это мой ',
+      highlight: 'сайт-портфолио.',
+    },
+  ];
+
   return (
     <div className="page home">
       <div className="home__text">
-        {[
-          { text: 'This is the ', highlight: ' first' },
-          { text: 'Here comes the ', highlight: ' second' },
-          { text: 'And finally, the ', highlight: ' third' },
-        ].map((item, i) => (
+        {text.map((item, index) => (
           <motion.p
-            key={i}
-            className="line"
-            custom={i}
+            key={index}
+            className="home__line"
+            custom={index}
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -36,11 +40,10 @@ function Projects() {
               className="home__highlighted"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: i * 0.5 + 0.2 }}
+              transition={{ duration: 1, delay: index * 0.5 + 0.2 }}
             >
               {item.highlight}
             </motion.span>
-            &nbsp;line
           </motion.p>
         ))}
       </div>
