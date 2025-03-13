@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 
 import { Icon } from '@/shared/ui';
 
@@ -11,12 +11,12 @@ interface IPortfolioCard {
   children?: ReactNode;
 }
 
-const PortfolioCard = ({
+const PortfolioCard: FC<IPortfolioCard> = ({
   icon,
   title,
   text,
   children,
-}: IPortfolioCard) => {
+}) => {
   return (
     <div className="portfolio-card">
       <div className="portfolio-card__main">

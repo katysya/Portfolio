@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Icon } from '../index';
 
 import './ItemCard.scss';
@@ -10,13 +11,13 @@ interface IItemCard {
   text?: string;
 }
 
-const ItemCard = ({
+const ItemCard: FC<IItemCard> = ({
   variant,
   name,
   size,
   color,
   text,
-}: IItemCard) => {
+}) => {
   return (
     <div
       className={`item-card ${

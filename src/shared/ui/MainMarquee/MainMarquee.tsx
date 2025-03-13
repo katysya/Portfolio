@@ -1,6 +1,6 @@
 import Marquee from 'react-fast-marquee';
 
-import { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 
 import './MainMarquee.scss';
 
@@ -9,7 +9,7 @@ interface IMainMarquee {
   children: ReactNode;
 }
 
-const MainMarquee = ({ speed = 30, children }: IMainMarquee) => {
+const MainMarquee: FC<IMainMarquee> = ({ speed = 30, children }) => {
   return (
     <div className="main-marquee">
       <Marquee speed={speed}>{children}</Marquee>

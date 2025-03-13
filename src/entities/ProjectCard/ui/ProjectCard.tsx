@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Hashtag } from '@/shared/ui';
 
 import './ProjectCard.scss';
@@ -11,14 +12,14 @@ interface IProjectCard {
   hashtags: string[];
 }
 
-const ProjectCard = ({
+const ProjectCard: FC<IProjectCard> = ({
   name,
   link,
   date,
   title,
   projectImg,
   hashtags,
-}: IProjectCard) => {
+}) => {
   return (
     <a href={link} className="project-card" target="_blank">
       <div className="project-card__info">

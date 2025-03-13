@@ -1,11 +1,11 @@
-import { CSSProperties, ReactNode } from 'react';
+import { CSSProperties, ReactNode, FC } from 'react';
 import { motion } from 'framer-motion';
 import { Transition } from 'framer-motion';
 import { useTheme } from '@app/Context/ThemeContext';
 
 import './AnimatePage.scss';
 
-interface IAnimateProps {
+interface IAnimate {
   children?: ReactNode;
   variants: number;
   transition?: Transition;
@@ -20,12 +20,12 @@ const animateProperty = [
   },
 ];
 
-const AnimatePage = ({
+const AnimatePage: FC<IAnimate> = ({
   children,
   variants,
   transition,
   style,
-}: IAnimateProps) => {
+}) => {
   const { isDark } = useTheme();
 
   return (

@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import './Avatar.scss';
 
 interface IAvatar {
@@ -5,7 +6,7 @@ interface IAvatar {
   description: string;
 }
 
-const Avatar = ({ path, description }: IAvatar) => {
+const Avatar: FC<IAvatar> = ({ path, description }) => {
   return (
     <div className="avatar">
       <img className="avatar__img" src={path} alt={description} />

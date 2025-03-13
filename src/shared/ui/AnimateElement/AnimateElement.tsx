@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 
 import {
   AnimationCard,
@@ -13,12 +13,12 @@ interface IAnimateElement {
   children: ReactNode;
 }
 
-const AnimateElement = ({
+const AnimateElement: FC<IAnimateElement> = ({
   element,
   amount,
   once,
   children,
-}: IAnimateElement) => {
+}) => {
   const variants =
     element === 'title' ? AnimationTitle : AnimationCard;
 

@@ -3,6 +3,7 @@ import {
   ReactNode,
   createContext,
   useContext,
+  FC,
 } from 'react';
 
 interface IThemeContext {
@@ -24,11 +25,11 @@ export const useTheme = () => {
   return context;
 };
 
-interface ThemeProviderProps {
+interface ThemeProvider {
   children: ReactNode;
 }
 
-export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+export const ThemeProvider: FC<ThemeProvider> = ({ children }) => {
   const [isDark, setIsDark] = useState(true);
 
   const toggleTheme = () => {

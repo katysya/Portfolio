@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import './TextLabel.scss';
 
 interface ITextLabel {
@@ -6,11 +8,11 @@ interface ITextLabel {
   active: boolean;
 }
 
-const Textlabel = ({
+const Textlabel: FC<ITextLabel> = ({
   primaryText,
   secondaryText,
   active,
-}: ITextLabel) => {
+}) => {
   return (
     <div className={`text-label ${active ? 'active' : ''}`}>
       <p className="text-label__primary text-label__text">

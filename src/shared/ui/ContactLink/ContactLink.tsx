@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Icon } from '../index';
 import { useTheme } from '@app/Context/ThemeContext';
 
@@ -10,7 +11,12 @@ interface IContactLink {
   size: number;
 }
 
-const ContactLink = ({ variant, url, name, size }: IContactLink) => {
+const ContactLink: FC<IContactLink> = ({
+  variant,
+  url,
+  name,
+  size,
+}) => {
   const { isDark } = useTheme();
 
   return (

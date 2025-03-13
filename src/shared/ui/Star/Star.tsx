@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import { Icon } from '../index';
 
 import './Star.scss';
@@ -7,7 +9,7 @@ interface IStar {
   delay: number;
 }
 
-const Star = ({ size, delay }: IStar) => {
+const Star: FC<IStar> = ({ size, delay }) => {
   return (
     <div className="star" style={{ animationDelay: `${delay}ms` }}>
       <Icon name="Star" size={size} color="currentColor" />

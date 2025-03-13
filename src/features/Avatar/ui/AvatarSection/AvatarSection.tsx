@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Avatar, GridStars, AnimateElement } from '@/shared/ui';
 
 import './AvatarSection.scss';
@@ -9,12 +10,12 @@ interface IAvatarSection {
   subtitle: string;
 }
 
-const AvatarSection = ({
+const AvatarSection: FC<IAvatarSection> = ({
   pathAvatar,
   descriptionAvatar,
   title,
   subtitle,
-}: IAvatarSection) => {
+}) => {
   return (
     <div className="avatar-section">
       <div className="avatar-section__grid _top">

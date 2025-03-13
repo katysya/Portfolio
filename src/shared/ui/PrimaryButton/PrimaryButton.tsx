@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import Icon from '../Icon/ui/Icon';
 import './PrimaryButton.scss';
 import Resume from '../../assets/doc/ekaterina_fedyakina.pdf';
@@ -9,12 +11,12 @@ interface IPrimaryButton {
   disabled?: boolean;
 }
 
-const PrimaryButton = ({
+const PrimaryButton: FC<IPrimaryButton> = ({
   variant,
   text,
   icon,
   disabled,
-}: IPrimaryButton) => {
+}) => {
   const Component = (variant === 'link' ? 'a' : 'button') as
     | 'a'
     | 'button';

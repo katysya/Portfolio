@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Hashtag } from '@/shared/ui';
 
 import Experience from '../assets/images/experience.webp';
@@ -12,13 +13,13 @@ interface IExperience {
   hashtags: string[];
 }
 
-const WorkExperience = ({
+const WorkExperience: FC<IExperience> = ({
   time,
   nameCompany,
   position,
   responsibilities,
   hashtags,
-}: IExperience) => {
+}) => {
   return (
     <div className="work-experience">
       <div className="work-experience__block">

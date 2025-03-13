@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import './Education.scss';
 
 interface IEducationCard {
@@ -6,7 +7,11 @@ interface IEducationCard {
   time: string;
 }
 
-const EducationCard = ({ name, position, time }: IEducationCard) => {
+const EducationCard: FC<IEducationCard> = ({
+  name,
+  position,
+  time,
+}) => {
   return (
     <div className="education">
       <div className="education__name">{name}</div>
