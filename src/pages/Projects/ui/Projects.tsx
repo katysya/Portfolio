@@ -1,6 +1,7 @@
 import { useTheme } from '@app/Context/ThemeContext';
 import { ProjectCard } from '@/entities/ProjectCard';
 import { PrimaryButton, Star, AnimateElement } from '@/shared/ui';
+import { DataProjectsGitHub } from '@/shared/config/constants';
 
 import './Projects.scss';
 
@@ -24,10 +25,17 @@ function Projects() {
         <h2 className="projects__title">Проекты 👀</h2>
       </AnimateElement>
       <div className="projects__list">
-        {[...Array(4)].map((index) => (
+        {DataProjectsGitHub.map((item, index) => (
           <div key={index}>
             <AnimateElement element="card" amount={0.25} once={true}>
-              <ProjectCard />
+              <ProjectCard
+                name={item.name}
+                link={item.link}
+                date={item.date}
+                title={item.title}
+                projectImg={item.projectImg}
+                hashtags={item.hashtags}
+              />
             </AnimateElement>
           </div>
         ))}

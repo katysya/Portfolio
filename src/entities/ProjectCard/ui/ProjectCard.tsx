@@ -2,45 +2,41 @@ import { Hashtag } from '@/shared/ui';
 
 import './ProjectCard.scss';
 
-import Project1 from '../assets/images/project-1.webp';
-import Project1Mini from '../assets/images/project-1-mini.webp';
+interface IProjectCard {
+  name: string;
+  link: string;
+  date: string;
+  title: string;
+  projectImg: string;
+  hashtags: string[];
+}
 
-const ProjectCard = () => {
+const ProjectCard = ({
+  name,
+  link,
+  date,
+  title,
+  projectImg,
+  hashtags,
+}: IProjectCard) => {
   return (
-    <a href="" className="project-card">
+    <a href={link} className="project-card" target="_blank">
       <div className="project-card__info">
         <div className="project-card__data">
-          <div className="project-card__name">Resume</div>
+          <div className="project-card__name">{name}</div>
           <span className="project-card__point">•</span>
-          <div className="project-card__date">2024</div>
+          <div className="project-card__date">{date}</div>
         </div>
-        <div className="project-card__title">
-          Revolutionizing Business Data Management with an Innovative
-          Work OS
-        </div>
+        <div className="project-card__title">{title}</div>
         <ul className="project-card__list">
-          <li>
-            <Hashtag text="Frontend" />
-          </li>
-          <li>
-            <Hashtag text="React" />
-          </li>
-          <li>
-            <Hashtag text="Vite" />
-          </li>
-          <li>
-            <Hashtag text="Next" />
-          </li>
-          <li>
-            <Hashtag text="Portfolio" />
-          </li>
+          {hashtags.map((item, index) => (
+            <li key={index}>
+              <Hashtag text={item} />
+            </li>
+          ))}
         </ul>
       </div>
-      {/* <img className="project-card__img" src={Project1} alt="" /> */}
-      <picture>
-        <source srcSet={Project1Mini} media="(max-width: 768px)" />
-        <img className="project-card__img" src={Project1} alt="" />
-      </picture>
+      <img className="project-card__img" src={projectImg} alt="" />
     </a>
   );
 };

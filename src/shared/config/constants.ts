@@ -1,3 +1,6 @@
+import Project1 from '../assets/images/project-1.webp';
+import Project2 from '../assets/images/project-2.webp';
+
 export const AnimationCard = {
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -65,3 +68,31 @@ export const PortfolioBot = {
     return `https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}`;
   },
 };
+
+export const DataProjectsGitHub = [
+  {
+    name: 'Portfolio',
+    link: 'https://github.com/katysya/Portfolio',
+    date: '2025',
+    title:
+      'Здесь вы найдете примеры моих работ, информацию обо мне и моих навыках.',
+    projectImg: Project1,
+    hashtags: [
+      'Portfolio',
+      'React',
+      'TypeScript',
+      'Vite',
+      'Scss',
+      'Frontend',
+    ],
+  },
+  {
+    name: 'GoSurf',
+    link: 'https://github.com/katysya/goSurf',
+    date: '2023',
+    title:
+      'GoSurf — это динамичный и интерактивный лендинг, созданный для любителей серфинга.',
+    projectImg: Project2,
+    hashtags: ['GoSurf', 'React', 'TypeScript', 'Scss', 'Frontend'],
+  },
+];
