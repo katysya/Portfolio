@@ -1,4 +1,4 @@
-import { useTheme } from '@app/Context/ThemeContext';
+import { useTheme } from '@/app/Context/ThemeContext';
 
 import { PortfolioSection } from '@/features/Portfolio';
 import { WorkExperience } from '@/entities/WorkExperience';

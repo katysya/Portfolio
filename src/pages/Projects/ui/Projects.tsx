@@ -1,4 +1,4 @@
-import { useTheme } from '@app/Context/ThemeContext';
+import { useTheme } from '@/app/Context/ThemeContext';
 import { ProjectCard } from '@/entities/Project';
 import { PrimaryButton, Star, AnimateElement } from '@/shared/ui';
 import { DataProjectsGitHub } from '@/shared/config/constants';

@@ -1,4 +1,4 @@
-import { useTheme } from '@app/Context/ThemeContext';
+import { useTheme } from '@/app/Context/ThemeContext';
 import { Icon } from '@/shared/ui';
 
 import './Switcher.scss';

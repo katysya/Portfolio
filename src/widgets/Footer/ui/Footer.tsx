@@ -1,5 +1,5 @@
 import { ContactLink } from '@/shared/ui';
-import { useTheme } from '@app/Context/ThemeContext';
+import { useTheme } from '@/app/Context/ThemeContext';
 
 import { ContactData } from '@/shared/config/constants';
 

@@ -8,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@app': path.resolve(__dirname, './app'),
+      '@app': path.resolve(__dirname, 'src/app'),
     },
   },
   css: {
@@ -16,7 +16,7 @@ export default defineConfig({
       scss: {
         implementation: sass,
         api: 'modern-compiler',
-        additionalData: `@use "@app/styles/_variables.scss" as *; 
+        additionalData: `@use "@app/styles/_variables.scss" as *;
                          @use "@app/styles/reset.scss" as *;`,
       },
     },
