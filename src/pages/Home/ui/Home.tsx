@@ -18,8 +18,8 @@ function Projects() {
   const text = [
     { text: 'Привет! Я ', highlight: 'Frontend Developer,' },
     {
-      text: 'и это мой ',
-      highlight: 'сайт-портфолио.',
+      text: 'и это моё ',
+      highlight: 'Портфолио.',
     },
   ];
 
