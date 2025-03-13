@@ -19,6 +19,7 @@ const ContactLink = ({ variant, url, name, size }: IContactLink) => {
       className={`contact-link ${
         variant === 'mini' ? '_mini' : '_max'
       }`}
+      target="_blank"
     >
       <Icon
         name={name}
