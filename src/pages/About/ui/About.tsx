@@ -113,7 +113,7 @@ const About = () => {
       </div>
       <PrimaryButton
         variant="link"
-        text="Скачать Резюме"
+        text="Скачать CV"
         icon="Download"
       ></PrimaryButton>
     </div>

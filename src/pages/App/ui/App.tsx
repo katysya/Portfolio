@@ -7,7 +7,7 @@ import { MainPage } from '../../MainPage';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter /*basename="/Portfolio/"*/>
         <MainPage />
       </BrowserRouter>
     </ThemeProvider>

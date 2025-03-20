@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import Icon from '../Icon/ui/Icon';
 import './PrimaryButton.scss';
-import Resume from '../../assets/doc/ekaterina_fedyakina.pdf';
+import CV from '../../assets/doc/fedyakina_ekaterina_CV.pdf';
 
 interface IPrimaryButton {
   variant: string;
@@ -26,8 +26,8 @@ const PrimaryButton: FC<IPrimaryButton> = ({
       className="primary-button"
       {...(variant === 'link'
         ? {
-            href: Resume ?? undefined,
-            download: 'Resume_Fedyakina_Ekaterina',
+            href: CV ?? undefined,
+            download: 'CV_Fedyakina_Ekaterina',
           }
         : { disabled, type: 'submit' })}
     >
