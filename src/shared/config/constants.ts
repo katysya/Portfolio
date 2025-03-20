@@ -1,12 +1,14 @@
-import Project1 from '../assets/images/project-1.webp';
-import Project2 from '../assets/images/project-2.webp';
+import Project1 from "../assets/images/project-1.webp";
+import Project2 from "../assets/images/project-2.webp";
+import Project3 from "../assets/images/project-3.webp";
+import Project4 from "../assets/images/project-4.webp";
 
 export const AnimationCard = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: 'easeOut' },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 
@@ -15,20 +17,20 @@ export const AnimationTitle = {
     opacity: 0,
     y: 50,
     scale: 0.9,
-    filter: 'blur(5px)',
+    filter: "blur(5px)",
     rotate: -5,
   },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
-    filter: 'blur(0px)',
+    filter: "blur(0px)",
     rotate: 0,
     transition: {
       duration: 2,
-      ease: 'easeOut',
+      ease: "easeOut",
       delay: 0.2,
-      type: 'spring',
+      type: "spring",
       stiffness: 50,
     },
   },
@@ -37,33 +39,33 @@ export const AnimationTitle = {
 export const ContactData = [
   {
     id: 1,
-    name: 'Telegram',
+    name: "Telegram",
     size: 22,
-    url: 'https://t.me/katyusyafed',
+    url: "https://t.me/katyusyafed",
   },
   {
     id: 2,
-    name: 'GitHub',
+    name: "GitHub",
     size: 22,
-    url: 'https://github.com/katysya?tab=repositories',
+    url: "https://github.com/katysya?tab=repositories",
   },
   {
     id: 3,
-    name: 'Email',
+    name: "Email",
     size: 22,
-    url: 'mailto:katharine.fed05@yandex.ru',
+    url: "mailto:katharine.fed05@yandex.ru",
   },
   {
     id: 4,
-    name: 'LinkedIn',
+    name: "LinkedIn",
     size: 22,
-    url: 'https://www.linkedin.com/in/ekaterina-fedyakina-65925b256/',
+    url: "https://www.linkedin.com/in/ekaterina-fedyakina-65925b256/",
   },
 ];
 
 export const PortfolioBot = {
-  token: '7902189231:AAFULnrNU9bua_ABC6849OMlWd06kFndLtk',
-  chatId: '957305373',
+  token: "7902189231:AAFULnrNU9bua_ABC6849OMlWd06kFndLtk",
+  chatId: "957305373",
   get url() {
     return `https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}`;
   },
@@ -71,28 +73,53 @@ export const PortfolioBot = {
 
 export const DataProjectsGitHub = [
   {
-    name: 'Portfolio',
-    link: 'https://github.com/katysya/Portfolio',
-    date: '2025',
+    name: "Portfolio",
+    link: "https://github.com/katysya/Portfolio",
+    date: "2025",
     title:
-      'Здесь вы найдете примеры моих работ, информацию обо мне и моих навыках.',
+      "Здесь вы найдете примеры моих работ, информацию обо мне и моих навыках.",
     projectImg: Project1,
+    hashtags: ["Portfolio", "React", "TypeScript", "Vite", "Scss", "Frontend"],
+  },
+  {
+    name: "MyTeam",
+    link: "https://github.com/katysya/MyTeam",
+    date: "2023",
+    title:
+      "MyTeam — демонстрация фильтрации, сортировки и пагинации списка команды.",
+    projectImg: Project4,
     hashtags: [
-      'Portfolio',
-      'React',
-      'TypeScript',
-      'Vite',
-      'Scss',
-      'Frontend',
+      "MyTeam",
+      "React",
+      "TypeScript",
+      "Scss",
+      "Frontend",
+      "Dashboard",
     ],
   },
   {
-    name: 'GoSurf',
-    link: 'https://github.com/katysya/goSurf',
-    date: '2023',
+    name: "Portal3D",
+    link: "https://github.com/katysya/Portal3D",
+    date: "2024",
     title:
-      'GoSurf — это динамичный и интерактивный лендинг, созданный для любителей серфинга.',
+      "Portal3D — это пространство, созданное с использованием React Three Fiber.",
+    projectImg: Project3,
+    hashtags: [
+      "Portal3D",
+      "React",
+      "React Three Fiber",
+      "Frontend",
+      "Blender",
+      "3D",
+    ],
+  },
+  {
+    name: "GoSurf",
+    link: "https://github.com/katysya/goSurf",
+    date: "2023",
+    title:
+      "GoSurf — это динамичный и интерактивный лендинг, созданный для любителей серфинга.",
     projectImg: Project2,
-    hashtags: ['GoSurf', 'React', 'TypeScript', 'Scss', 'Frontend'],
+    hashtags: ["GoSurf", "React", "TypeScript", "Scss", "Frontend"],
   },
 ];

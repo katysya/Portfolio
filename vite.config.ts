@@ -1,21 +1,21 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
-import sass from 'sass';
-import svgr from 'vite-plugin-svgr';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import sass from "sass";
+import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@app': path.resolve(__dirname, 'src/app'),
+      "@": path.resolve(__dirname, "src"),
+      "@app": path.resolve(__dirname, "src/app"),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
         implementation: sass,
-        api: 'modern-compiler',
+        api: "modern-compiler",
         additionalData: `@use "@app/styles/_variables.scss" as *;
                          @use "@app/styles/reset.scss" as *;`,
       },
@@ -25,12 +25,13 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        exportType: 'default',
+        exportType: "default",
         ref: true,
         svgo: false,
         titleProp: true,
       },
-      include: '**/*.svg',
+      include: "**/*.svg",
     }),
   ],
+  base: "/Portfolio",
 });

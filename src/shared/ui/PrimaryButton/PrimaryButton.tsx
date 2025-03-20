@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import Icon from '../Icon/ui/Icon';
-import './PrimaryButton.scss';
-import Resume from '../../assets/doc/ekaterina_fedyakina.pdf';
+import Icon from "../Icon/ui/Icon";
+import "./PrimaryButton.scss";
+import CV from "../../assets/doc/CV_Fedyakina_Ekaterina.pdf.pdf";
 
 interface IPrimaryButton {
   variant: string;
@@ -17,19 +17,17 @@ const PrimaryButton: FC<IPrimaryButton> = ({
   icon,
   disabled,
 }) => {
-  const Component = (variant === 'link' ? 'a' : 'button') as
-    | 'a'
-    | 'button';
+  const Component = (variant === "link" ? "a" : "button") as "a" | "button";
 
   return (
     <Component
       className="primary-button"
-      {...(variant === 'link'
+      {...(variant === "link"
         ? {
-            href: Resume ?? undefined,
-            download: 'Resume_Fedyakina_Ekaterina',
+            href: CV ?? undefined,
+            download: "CV_Fedyakina_Ekaterina",
           }
-        : { disabled, type: 'submit' })}
+        : { disabled, type: "submit" })}
     >
       {text}
       <Icon name={icon} size={18} color="currentColor" />
