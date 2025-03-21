@@ -1,5 +1,6 @@
 import Project1 from '../assets/images/project-1.webp';
 import Project2 from '../assets/images/project-2.webp';
+import Project3 from '../assets/images/project-3.webp';
 
 export const AnimationCard = {
   hidden: { opacity: 0, y: 50 },
@@ -94,5 +95,21 @@ export const DataProjectsGitHub = [
       'GoSurf — это динамичный и интерактивный лендинг, созданный для любителей серфинга.',
     projectImg: Project2,
     hashtags: ['GoSurf', 'React', 'TypeScript', 'Scss', 'Frontend'],
+  },
+  {
+    name: 'Portal3D',
+    link: 'https://github.com/katysya/Portal3D',
+    date: '2024',
+    title:
+      'Portal3D — это пространство, созданное с использованием React Three Fiber.',
+    projectImg: Project3,
+    hashtags: [
+      'Portal3D',
+      'React',
+      'React Three Fiber',
+      'Frontend',
+      'Blender',
+      '3D',
+    ],
   },
 ];
