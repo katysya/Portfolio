@@ -33,7 +33,7 @@ export const dataAboutMe = {
     },
     {
       id: 2,
-      time: "Февраль 2022 - Ноябрь 2023",
+      time: "Январь 2023 - Ноябрь 2023",
       nameCompany: "UMAX",
       position: "Frontend Developer",
       responsibilities: [

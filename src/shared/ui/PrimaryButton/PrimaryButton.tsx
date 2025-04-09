@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import Icon from "../Icon/ui/Icon";
 import "./PrimaryButton.scss";
-import CV from "../../assets/doc/CV_Fedyakina_Ekaterina.pdf.pdf";
+import CV from "../../assets/doc/CV_Fedyakina_Ekaterina.pdf";
 
 interface IPrimaryButton {
   variant: string;
