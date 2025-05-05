@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import '@app/styles/global.scss';
-import './Home.scss';
+import "@app/styles/global.scss";
+import "./Home.scss";
 
-import { MainParticles } from '@/shared/ui';
+import { MainParticles } from "@/shared/ui";
 
 function Projects() {
   const textVariants = {
@@ -16,10 +16,10 @@ function Projects() {
   };
 
   const text = [
-    { text: 'Привет! Я ', highlight: 'Frontend Developer,' },
+    { text: "Привет! Я ", highlight: "Frontend Developer," },
     {
-      text: 'и это моё ',
-      highlight: 'Портфолио.',
+      text: "и это моё ",
+      highlight: "Портфолио.",
     },
   ];
 

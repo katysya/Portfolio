@@ -19,10 +19,7 @@
     color: $black;
     background-color: $purple-300;
     box-shadow: 0px 1px 6px 0 rgb(0 0 0 / 0.2);
-    background-image: radial-gradient(
-      rgba(0, 0, 0, 0.171) 1px,
-      transparent 0
-    );
+    background-image: radial-gradient(rgba(0, 0, 0, 0.171) 1px, transparent 0);
   }
 
   &__top {
@@ -48,7 +45,12 @@
     letter-spacing: 2px;
   }
 
-  &__responsibilities {
+  &__subtitle {
+    font-size: calc(14px + 6 * $size);
+    color: $purple-200;
+  }
+
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -92,6 +94,10 @@
       height: 28px;
     }
 
+    &__subtitle {
+      margin-bottom: 16px;
+    }
+
     &__position {
       margin: 0 0 20px;
     }
@@ -117,6 +123,10 @@
     &__img {
       width: 36px;
       height: 36px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
     }
 
     &__hashtags {

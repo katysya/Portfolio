@@ -1,22 +1,22 @@
-import { useTheme } from '@/shared/lib/theme';
+import { useTheme } from "@/shared/lib/theme";
 
-import { PortfolioSection } from '@/features/Portfolio';
-import { WorkExperience } from '@/entities/WorkExperience';
-import { EducationCard } from '@/entities/Education';
-import { AvatarSection } from '@/features/Avatar';
+import { PortfolioSection } from "@/features/Portfolio";
+import { WorkExperience } from "@/entities/WorkExperience";
+import { EducationCard } from "@/entities/Education";
+import { AvatarSection } from "@/features/Avatar";
 
-import { PrimaryButton, Star, AnimateElement } from '@/shared/ui';
-import { dataAboutMe } from '../config/constants';
+import { PrimaryButton, Star, AnimateElement } from "@/shared/ui";
+import { dataAboutMe } from "../config/constants";
 
-import PhotoAvatar from '../assets/images/avatar.webp';
+import PhotoAvatar from "../assets/images/avatar.webp";
 
-import './About.scss';
+import "./About.scss";
 
 const About = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className={`page about ${isDark ? 'dark' : 'light'}`}>
+    <div className={`page about ${isDark ? "dark" : "light"}`}>
       <div className="about__avatar">
         <AvatarSection
           pathAvatar={PhotoAvatar}
@@ -57,16 +57,13 @@ const About = () => {
           <div className="about__list">
             {dataAboutMe.experience.map((item, index) => (
               <div key={index}>
-                <AnimateElement
-                  element="card"
-                  amount={0.25}
-                  once={true}
-                >
+                <AnimateElement element="card" amount={0.25} once={true}>
                   <WorkExperience
                     time={item.time}
                     nameCompany={item.nameCompany}
                     position={item.position}
                     responsibilities={item.responsibilities}
+                    achievements={item.achievements}
                     hashtags={item.hashtags}
                   />
                 </AnimateElement>
@@ -95,11 +92,7 @@ const About = () => {
           <div className="about__list">
             {dataAboutMe.edication.map((item, index) => (
               <div key={index}>
-                <AnimateElement
-                  element="card"
-                  amount={0.25}
-                  once={true}
-                >
+                <AnimateElement element="card" amount={0.25} once={true}>
                   <EducationCard
                     name={item.name}
                     position={item.position}
